@@ -1,40 +1,7 @@
-Ruby Curious - Lone Star 2009  
-
-In this course we'll introduce you to the wonderfully curious world of Ruby. You've heard the hype and can no longer hold back you brain's intrinsic thirst for knowledge. Will it make you toast in the morning? Is it your best friend? Can it really solve world hunger?
-
-We think so and we'll show you how. In this course we'll demonstrate the pure awesomeness of Ruby by exploring: 
-  
-After completing this lab-ridden course your mind will be overwhelmed with the pure wonder and undisputed beauty of the Ruby Language. The hype will no longer be hype, but pure fact, and your undeniable love for Ruby will be... undeniable. 
-
-
-* Revised Syllabus 
-* Detailed Outline (for us to follow) 
-* Labs content, how many, when 
-* Basic slides for each section we'd like to cover 
-* Flex content if we are short/long on time 
-* Rehearsal of some kind 
-
-
-We need to keep this fun and (relatively) entertaining. The course is called Ruby Curious and should be designed as such. Think: Introduction to Ruby with quirkiness. There will inevitably be people in the class that will be above a good portion of the material we'll present -- but hopefully we can be thorough enough that still get something out of it.
-
-I think we should work in as many labs as possible - we had 3 (or 4?) last year and it wasn't enough. Interactivity is key. In the classes I've taught it seems as though students do the most learning during the lab sessions -- not when we're up there blabbering away :D Labs also produce valuable questions on which we can riff a bit.
-
-
-
-Jim freeze
-Times don't line up on schedule
-see if we can poll skill levels of the incoming students (jim or us) -- DONE 
-    - what are the results? (PE)
-
-send a list of prereqs -- and get a mailing list rolling
------------------
-
-
 introduction to the env 
     filetypes (.rb) 
     commands - ruby, irb 
     explain interpreted language
-
 
 irb 
     - live interpreter  
