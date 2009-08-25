@@ -1,21 +1,10 @@
-Ruby Curious -
-
- Lone Star 2009  
-
+Ruby Curious - Lone Star 2009  
 
 In this course we'll introduce you to the wonderfully curious world of Ruby. You've heard the hype and can no longer hold back you brain's intrinsic thirst for knowledge. Will it make you toast in the morning? Is it your best friend? Can it really solve world hunger?
 
-
 We think so and we'll show you how. In this course we'll demonstrate the pure awesomeness of Ruby by exploring: 
-
-
   
 After completing this lab-ridden course your mind will be overwhelmed with the pure wonder and undisputed beauty of the Ruby Language. The hype will no longer be hype, but pure fact, and your undeniable love for Ruby will be... undeniable. 
-
- Email to instructors
-
-
-We have just about 3 weeks to build out Ruby Curious before we need to teach it at Lone Star. We need to come up with a pretty much everything at this point. Some specifics that come to mind:
 
 
 * Revised Syllabus 
@@ -25,12 +14,6 @@ We have just about 3 weeks to build out Ruby Curious before we need to teach it 
 * Flex content if we are short/long on time 
 * Rehearsal of some kind 
 
-Student Prerequisites
-
-
-* What to bring to class 
-* What to have installed on your laptop 
-* Reading material? Maybe? 
 
 We need to keep this fun and (relatively) entertaining. The course is called Ruby Curious and should be designed as such. Think: Introduction to Ruby with quirkiness. There will inevitably be people in the class that will be above a good portion of the material we'll present -- but hopefully we can be thorough enough that still get something out of it.
 
