@@ -1,3 +1,222 @@
+Installfest
+  Who needs help getting ruby up and running on their machines?
+  We can even start this pre-class if we can get there early
+  Might want to mention this in the introduction email (come early for install help?)
+
+Introduction to Ruby
+  Interactive Ruby Console (irb)
+  Data Types: Strings, Integers, Arrays, Hashes
+  Control Structures
+  Iterators, Enumerables
+
+  Classes
+    Methods (class vs instance, public vs private)
+      Accessors (reader, writer, accessor)
+      Overriding methods
+      Blocks, yield
+      Exclamation-point and question-mark suffixes
+        eliminates the need for 'is_' method prefixes
+    Inheritance, Modules/Mixins'
+    When to use .self
+    When to use return
+
+  RubyGems package manager
+
+  Github
+  Gists
+
+---------
+
+  * irb - Interactive Ruby Console
+    You can execute live Ruby code on the fly
+    A great place to test out simple Ruby code
+
+  * # denotes a comment
+    - comments are ignored by Ruby
+    - you can comment out multiple lines by using:
+
+      =begin
+        this is a long comment
+        that has multiple lines
+      =end
+
+  * puts will print a line to the screen automatically adding a new line character
+  * print will print a line to the screen without adding a new line character
+
+  * object.inspect will give you good information on an object
+    - works well when debugging
+    - commonly used like:
+
+      puts something.inspect
+
+  * Strings
+    - single quotes will NOT execute ruby code
+    - double quotes WILL execute and is called 'String Interpolation'
+
+      'Happy'           #=> 'happy'
+      "Happy #{1+1}"    #=> 'happy 2'
+      'Happy ' + 2.to_s #=> 'happy 2'
+      'Happy ' += 2     #=> 'happy 2'
+      'Happy'.length    #=> 5
+      'Happy'.reverse   #=> 'yppaH'
+      'Happy'.downcase  #=> 'happy'
+
+    - type cast a non-String to a String
+
+        5       #=> 5
+        5.to_s  #=>""5"
+
+  * Integers
+      1       #=> 1
+      1+1     #=> 2
+      1.zero? #=> false
+
+      1.upto(10) do |number|
+        puts number
+      end
+
+  * Arrays
+      Array.new       #=> []
+      []              #=> []
+      [1,2]           #=> [1, 2]
+      [1,2] + [3, 4]  #=> [1,2,3,4]
+      [1,2,3].size    #=> 3
+
+      ['car', 'truck'].each do |word|
+        puts word
+      end
+
+  * Hashes
+      Hash.new        #=> {}
+      {}              #=> {}
+      {'name' => 'jack'}              #=> {'name' => 'jack'}
+      {'name' => 'beth', 'age' => 22} #=> {'name' => 'beth', 'age' => 22}
+
+      {'name' => 'beth', 'age' => 22}.each do |key, vale|
+        puts "#{key}:#{value}"
+      end
+
+  * methods (functions in other languages)
+    - always returns the last value in the method
+    - return is implicit (only need to call return in specific instances such as 'short-circuiting')
+    - an explicit return will stop execution of that method on the line that called return (good for short-circuiting a method)
+
+      def age
+        22
+      end
+
+      def name
+        'jackson'
+      end
+
+      # would return 'sven'
+      def name
+        'bently'
+        'sven'
+      end
+
+      # would return 'bently'
+      def name
+        return 'bently'
+        'sven'
+      end
+
+  * methods suffixes
+    - exclamation point: destructive, modifies the current object instead of returning a new object with the modifications. Normally Ruby will make a copy of an object, do the requested operation, and return a copy with the changes leaving the original in-tact. An exclamation point avoids this copy and modifies the object directly.
+
+      def break_something!
+        # something destructive
+      end
+
+    - question mark: implies that a boolean will be returned. In languages that lack method suffixes you would write some_array.is_empty to imply a boolean. Avoid is_empty? -- it's redundant: use a suffix or is_ but not both.
+
+      def this_year?(year)
+        Time.now.year == year
+      end
+
+  * short-circuiting methods
+
+    standard
+
+      def happy(word)
+        if word == 'happy'
+          'happy'
+        else
+          'unhappy'
+        end
+      end
+
+    short-circuit version
+
+      def happy(word)
+        return 'happy' if word == 'happy'
+        'unhappy'
+      end
+
+  * unless conditional (opposite of if)
+    - this is the opposite of an if conditional.
+    - unless this do that
+
+      unless happy?
+        'unhappy'
+      else
+        'happy'
+      end
+
+    the if statement that acheives the same thing:
+
+      if happy?
+        'happy'
+      else
+        'unhappy'
+      end
+
+  * single line if and unless statements
+    - you can use if and unless at the end of a line for example:
+
+      puts 'happy' if something.happy?
+      puts 'unhappy' unless something.happy?
+
+  * ternary operator (single line if/else)
+    condition ? true_part : false_part
+
+  * Classes
+    - classes begin with a capital letter
+    - class methods are defined def self.method_name
+    - class methods are only available to the class - not to the instance of the class
+    - private methods are only available inside that class
+    - protected methods are only avilable to objects of the same type
+
+      class Dog
+        def bark
+          puts 'Woof'
+        end
+
+        def vitals
+          "Blood Type: #{blood_type}"
+        end
+
+        def self.number_of_legs
+          4
+        end
+
+        private
+          def blood_type
+            'F Positive'
+          end
+      end
+
+      rex = Dog.new       #=> rex is now an instance of the Dog class
+      rex.bark            #=> "Woof"
+
+      rex.number_of_legs  #=> undefined
+      Dog.number_of_legs  #=> 4
+
+      rex.blood_type      #=> undefined
+      rex.vitals          #=> "Blood Type: F Positive"
+
+---------
+
 introduction to the env 
     filetypes (.rb) 
     commands - ruby, irb 
