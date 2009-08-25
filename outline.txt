@@ -1,0 +1,147 @@
+Ruby Curious -
+
+ Lone Star 2009  
+
+
+In this course we'll introduce you to the wonderfully curious world of Ruby. You've heard the hype and can no longer hold back you brain's intrinsic thirst for knowledge. Will it make you toast in the morning? Is it your best friend? Can it really solve world hunger?
+
+
+We think so and we'll show you how. In this course we'll demonstrate the pure awesomeness of Ruby by exploring: 
+
+
+  
+After completing this lab-ridden course your mind will be overwhelmed with the pure wonder and undisputed beauty of the Ruby Language. The hype will no longer be hype, but pure fact, and your undeniable love for Ruby will be... undeniable. 
+
+ Email to instructors
+
+
+We have just about 3 weeks to build out Ruby Curious before we need to teach it at Lone Star. We need to come up with a pretty much everything at this point. Some specifics that come to mind:
+
+
+* Revised Syllabus 
+* Detailed Outline (for us to follow) 
+* Labs content, how many, when 
+* Basic slides for each section we'd like to cover 
+* Flex content if we are short/long on time 
+* Rehearsal of some kind 
+
+Student Prerequisites
+
+
+* What to bring to class 
+* What to have installed on your laptop 
+* Reading material? Maybe? 
+
+We need to keep this fun and (relatively) entertaining. The course is called Ruby Curious and should be designed as such. Think: Introduction to Ruby with quirkiness. There will inevitably be people in the class that will be above a good portion of the material we'll present -- but hopefully we can be thorough enough that still get something out of it.
+
+I think we should work in as many labs as possible - we had 3 (or 4?) last year and it wasn't enough. Interactivity is key. In the classes I've taught it seems as though students do the most learning during the lab sessions -- not when we're up there blabbering away :D Labs also produce valuable questions on which we can riff a bit.
+
+
+
+Jim freeze
+Times don't line up on schedule
+see if we can poll skill levels of the incoming students (jim or us) -- DONE 
+    - what are the results? (PE)
+
+send a list of prereqs -- and get a mailing list rolling
+-----------------
+
+
+introduction to the env 
+    filetypes (.rb) 
+    commands - ruby, irb 
+    explain interpreted language
+
+
+irb 
+    - live interpreter  
+    100.times {put 'happy'}
+    'happy'.reverse
+    show them how to get help before we let them loose on the lab?
+
+
+«LAB» - launch irb and try out commands 
+
+file 
+    - basic syntax
+
+   - functions, parameters, optional parameters 
+   - classes 
+variables 
+control structures 
+    - if
+
+   - case 
+   - why no loop() --- no for loops! YAY!
+
+   - no explicit returns
+
+«LAB» - create a ruby script and run it 
+
+Classes 
+   - basic OOP
+
+   - Object class
+
+   - everything is an object
+
+   - subclasses 
+«LAB» - create your first class and do some stuff with it, attr_accessor etc, subclass it and override shit 
+
+ Fixnums 
+Strings 
+    - made of characters
+
+   - fun methods
+
+        - chomp strip reverse uppercase downcase 
+«LAB» - hard exercise with strings 
+
+Arrays 
+    - enumerate 
+    - iterate 
+        - blocks
+
+    - start from 0 
+    - fetch time
+
+«LAB» - hard exercise with arrays 
+    
+Hashes 
+    - keys & values 
+   - generic use cases
+
+   - iterate 
+   - add/remove 
+«LAB» - hard exercise with hashes 
+
+ARGV 
+    - fetching arguments from command line
+    - default arguments
+
+
+Rubygems 
+    - get this installed beforehand
+
+   - gem install fastercsv
+
+   - gem install twitter 
+
+Reading file contents 
+    - File.open
+
+   - IO.readlines 
+«LAB» - wget csv file, then read it and parse using fastercsv, display the results (script) 
+
+
+
+so i'm thinking that we give them a list of words csv separated, the first letter of which spells out a message that they can then programatically tweet out from their/class's twitter account
+
+
+Frameworks
+Gosu? -1-1+0
+Sinatra? +1+1-1
+Shoes? -1-1+1
+
+Show them how to get documentation
+
