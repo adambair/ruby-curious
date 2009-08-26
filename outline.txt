@@ -20,12 +20,43 @@ Introduction to Ruby
     When to use .self
     When to use return
 
+  YAML! It's baked right in!
+    serialize and marshal ruby objects to file
+
+    example
+    # write yaml to a file
+    open('filename', 'w') {|f| f << something.to_yaml}
+
+    # read yaml from a file
+    something = YAML.load(open('filename'))
+
+
   RubyGems package manager
 
   Github
   Gists
 
 ---------
+
+  * history
+    - ruby is almost 15 years old
+    - conceived by Yukihiro Matsumoto (Matz) in 1993
+    - first public release (0.95) in december 05
+    - 1.0 on christmas of 06
+    - Ruby-talk mailing list (first in english) started when ruby 1.3 was released in 99
+
+  * philosphy
+    - Matz designed Ruby with programmer productivity and happiness in mind
+    - Takes the focus away from making the machine run faster -- but instead making the programmer faster, happier and more productive.
+    - Ruby follows the principals of the Path of Least Surprise (POLS?). The language was designed to be consistent in how it operates so that ruby programmers can usually guess the right method to use or how something is going to respond/perform/etc.
+      
+      example:
+
+        String#upcase has a matching #downcase method
+        instead of upper and lower (choosing up/down instead for logical consistency)
+
+    - Ruby is fun. It's just more fun to say than Python... way more fun to say then Perl.
+
 
   * irb - Interactive Ruby Console
     You can execute live Ruby code on the fly
@@ -61,10 +92,10 @@ Introduction to Ruby
       'Happy'.reverse   #=> 'yppaH'
       'Happy'.downcase  #=> 'happy'
 
-    - type cast a non-String to a String
+    - cast a non-String to a String
 
         5       #=> 5
-        5.to_s  #=>""5"
+        5.to_s  #=>"5"
 
   * Integers
       1       #=> 1
@@ -96,6 +127,38 @@ Introduction to Ruby
         puts "#{key}:#{value}"
       end
 
+  * control structures
+
+    - the common if/else statement
+        
+        if true
+          'do if true'
+        else
+          'do if false' #=> this is so not going to ever happen
+        end
+        
+    - the less common but more awesome ternary operator 
+
+        true ? 'do if true' : 'do if false'
+
+    - the even lesser known and slightly deranged unless
+      it's kind of like the reverse polarity if statement
+      kind of odd when used on it's own... but it has a neat use case
+
+        unless true
+          'do if false'
+        else
+          'do if true'
+        end
+
+    - ruby lets you do awesome thing like this:
+
+        puts 'happy' if adam.happy?
+
+    - but since we have something called unless we can do:
+        
+        puts 'happy' unless adam.sad? #=> sweet
+
   * methods (functions in other languages)
     - always returns the last value in the method
     - return is implicit (only need to call return in specific instances such as 'short-circuiting')
@@ -122,7 +185,9 @@ Introduction to Ruby
       end
 
   * methods suffixes
-    - exclamation point: destructive, modifies the current object instead of returning a new object with the modifications. Normally Ruby will make a copy of an object, do the requested operation, and return a copy with the changes leaving the original in-tact. An exclamation point avoids this copy and modifies the object directly.
+    - exclamation point: usually indicates that something destructive is going to happen.
+
+    - an example of this would be Array#sort!. The Array#sort! method modifies the current object instead of returning a new object with the modifications. Normally Ruby will make a copy of an object, do the requested operation, and return a copy with the changes leaving the original in-tact. An exclamation point avoids this copy and modifies the object directly.
 
       def break_something!
         # something destructive
@@ -313,4 +378,5 @@ Sinatra? +1+1-1
 Shoes? -1-1+1
 
 Show them how to get documentation
+
 
