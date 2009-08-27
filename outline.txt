@@ -83,6 +83,11 @@ Introduction to Ruby
         5       #=> 5
         5.to_s  #=>"5"
 
+    - substring
+       "hello"[0,  1] #=> 'h'
+       "hello"[0,  2] #=> 'he'
+       "hello"[-1, 1] #=> 'o'
+
   * Integers/Fixnum
       1       #=> 1
       1+1     #=> 2
