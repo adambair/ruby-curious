@@ -314,6 +314,14 @@ Ruby Curious
 
     Lab: module Eats for Animals
 
+  * ARGV
+    - fetching arguments from command line
+    - default arguments
+
+  * Reading file contents 
+    - File.open
+    - IO.readlines 
+
   * YAML! It's baked right in!
     - serialize and marshal ruby objects to file
     - example
@@ -322,17 +330,11 @@ Ruby Curious
       # read yaml from a file
       something = YAML.load(open('filename'))
 
+      Lab: Read yaml file (we'll provide) and pretty print it.
+
   * RUBY-DOC.org
     - documentation
     - google
-
-  * ARGV
-    - fetching arguments from command line
-    - default arguments
-
-  * Reading file contents 
-    - File.open
-    - IO.readlines 
 
   * Duck Typing
 
