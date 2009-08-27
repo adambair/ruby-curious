@@ -43,6 +43,10 @@ Ruby Curious
   * irb - Interactive Ruby Console
     You can execute live Ruby code on the fly
     A great place to test out simple Ruby code
+    Mention variables
+        store anything
+        created on the fly
+        lowercase
 
   * # denotes a comment
 
@@ -76,6 +80,11 @@ Ruby Curious
 
         5       #=> 5
         5.to_s  #=>"5"
+
+    - substring
+       "hello"[0,  1] #=> 'h'
+       "hello"[0,  2] #=> 'he'
+       "hello"[-1, 1] #=> 'o'
 
   * Integers/Fixnum
       1       #=> 1
