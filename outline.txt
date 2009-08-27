@@ -301,13 +301,15 @@ Ruby Curious
       rex.vitals          #=> "Blood Type: F Positive"
 
       Lab: Implement Fixnum#even?
-      Lab: Ark lab.
+      Lab: Animal lab.  Subclass .walks_on (returns number of legs).
 
   * Modules
     - collections of methods
     - can be 'mixed in' with classes so that the classes respond to those methods
     - nice way to organize specific or common functionality
     - ex: Enumerable (each, inject, map)
+
+    Lab: module Eats for Animals
 
   * Inheritance
     - subclasses 
