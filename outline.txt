@@ -73,6 +73,8 @@ Introduction to Ruby
 
   * puts will print a line to the screen automatically adding a new line character
   * print will print a line to the screen without adding a new line character
+  * gets 
+  * p
 
   * object.inspect will give you good information on an object
     - works well when debugging
@@ -81,8 +83,9 @@ Introduction to Ruby
       puts something.inspect
 
   * Strings
-    - single quotes will NOT execute ruby code
     - double quotes WILL execute and is called 'String Interpolation'
+    - "#{variable} is the value"
+    - single quotes will NOT interpolate and execute
 
       'Happy'           #=> 'happy'
       "Happy #{1+1}"    #=> 'happy 2'
@@ -97,7 +100,7 @@ Introduction to Ruby
         5       #=> 5
         5.to_s  #=>"5"
 
-  * Integers
+  * Integers/Fixnum
       1       #=> 1
       1+1     #=> 2
       1.zero? #=> false
@@ -105,6 +108,19 @@ Introduction to Ruby
       1.upto(10) do |number|
         puts number
       end
+
+      dividing two integers performs integer division
+      3/1.5 => decimal
+      3/2 => 1
+
+  * Ranges
+      "a".."z"
+      1..100
+      upto
+      downto
+
+  * Symbols
+      identifiers
 
   * Arrays
       Array.new       #=> []
@@ -116,6 +132,8 @@ Introduction to Ruby
       ['car', 'truck'].each do |word|
         puts word
       end
+
+      ['car', 'truck'].map{|w| w.reverse} #=> ['rac', 'kcurt']
 
   * Hashes
       Hash.new        #=> {}
