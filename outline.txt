@@ -223,7 +223,7 @@ Ruby Curious
       end
     - use short-circuit returns to stop methods  mid-way
 
-    Lab: Implement Fixnum#even?
+    Lab: Implement even?(number)
 
   * methods suffixes
     - exclamation point: usually indicates that something destructive is going to happen.
@@ -299,6 +299,8 @@ Ruby Curious
 
       rex.blood_type      #=> NoMethodError: private method `blood_type'
       rex.vitals          #=> "Blood Type: F Positive"
+
+      Lab: Implement Fixnum#even?
 
   * Modules
     - collections of methods
