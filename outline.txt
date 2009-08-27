@@ -4,43 +4,9 @@ Installfest
   Might want to mention this in the introduction email (come early for install help?)
 
 Introduction to Ruby
-  Interactive Ruby Console (irb)
-  Data Types: Strings, Integers, Arrays, Hashes
-  Control Structures
-  Iterators, Enumerables
-
-  Classes
-    Methods (class vs instance, public vs private)
-      Accessors (reader, writer, accessor)
-      Overriding methods
-      Blocks, yield
-      Exclamation-point and question-mark suffixes
-        eliminates the need for 'is_' method prefixes
-    Inheritance, Modules/Mixins'
-    When to use .self
-    When to use return
-
-  YAML! It's baked right in!
-    serialize and marshal ruby objects to file
-
-    example
-    # write yaml to a file
-    open('filename', 'w') {|f| f << something.to_yaml}
-
-    # read yaml from a file
-    something = YAML.load(open('filename'))
-
-
-  RubyGems package manager
-
-  Github
-  Gists
-
----------
-
-  not the typical slideshow class, more interactive than that.
-  follow along, type stuff in
-  speak up, discuss it and move on
+  * not the typical slideshow class, more interactive than that.
+    - follow along, type stuff in
+    - speak up, discuss it and move on
 
   * history
     - ruby is almost 15 years old
@@ -61,6 +27,10 @@ Introduction to Ruby
 
     - Ruby is fun. It's just more fun to say than Python... way more fun to say then Perl.
 
+  * introduction to the env 
+    filetypes (.rb) 
+    commands - ruby, irb 
+    explain interpreted language
 
   * irb - Interactive Ruby Console
     You can execute live Ruby code on the fly
@@ -194,6 +164,7 @@ Introduction to Ruby
     - always returns the last value in the method
     - return is implicit (only need to call return in specific instances such as 'short-circuiting')
     - an explicit return will stop execution of that method on the line that called return (good for short-circuiting a method)
+    - parameters
 
       def age
         22
@@ -312,103 +283,39 @@ Introduction to Ruby
       rex.blood_type      #=> NoMethodError: private method `blood_type'
       rex.vitals          #=> "Blood Type: F Positive"
 
----------
+  * Modules
+    - collections of methods
+    - can be 'mixed in' with classes so that the classes respond to those methods
+    - nice way to organize specific or common functionality
+    - ex: Enumerable (each, inject, map)
 
-introduction to the env 
-    filetypes (.rb) 
-    commands - ruby, irb 
-    explain interpreted language
+  * Inheritance
+    - subclasses 
+    - superclasses
 
-irb 
-    - live interpreter  
-    100.times {put 'happy'}
-    'happy'.reverse
-    show them how to get help before we let them loose on the lab?
+  * YAML! It's baked right in!
+    - serialize and marshal ruby objects to file
+    - example
+      # write yaml to a file
+      open('filename', 'w') {|f| f << something.to_yaml}
+      # read yaml from a file
+      something = YAML.load(open('filename'))
 
+  * RUBY-DOC.org
+    - documentation
+    - google
 
-«LAB» - launch irb and try out commands 
-
-file 
-    - basic syntax
-
-   - functions, parameters, optional parameters 
-   - classes 
-variables 
-control structures 
-    - if
-
-   - case 
-   - why no loop() --- no for loops! YAY!
-
-   - no explicit returns
-
-«LAB» - create a ruby script and run it 
-
-Classes 
-   - basic OOP
-
-   - Object class
-
-   - everything is an object
-
-   - subclasses 
-«LAB» - create your first class and do some stuff with it, attr_accessor etc, subclass it and override shit 
-
- Fixnums 
-Strings 
-    - made of characters
-
-   - fun methods
-
-        - chomp strip reverse uppercase downcase 
-«LAB» - hard exercise with strings 
-
-Arrays 
-    - enumerate 
-    - iterate 
-        - blocks
-
-    - start from 0 
-    - fetch time
-
-«LAB» - hard exercise with arrays 
-    
-Hashes 
-    - keys & values 
-   - generic use cases
-
-   - iterate 
-   - add/remove 
-«LAB» - hard exercise with hashes 
-
-ARGV 
+  * ARGV
     - fetching arguments from command line
     - default arguments
 
-
-Rubygems 
-    - get this installed beforehand
-
+  * Rubygems 
+   - get this installed beforehand
    - gem install fastercsv
-
    - gem install twitter 
 
-Reading file contents 
+  * Reading file contents 
     - File.open
-
-   - IO.readlines 
-«LAB» - wget csv file, then read it and parse using fastercsv, display the results (script) 
-
-
-
-so i'm thinking that we give them a list of words csv separated, the first letter of which spells out a message that they can then programatically tweet out from their/class's twitter account
-
-
-Frameworks
-Gosu? -1-1+0
-Sinatra? +1+1-1
-Shoes? -1-1+1
-
-Show them how to get documentation
+    - IO.readlines 
 
 
