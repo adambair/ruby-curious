@@ -40,6 +40,8 @@ Ruby Curious
     commands - ruby, irb 
     explain interpreted language
 
+    Lab: helloWorld.rb
+
   * irb - Interactive Ruby Console
     You can execute live Ruby code on the fly
     A great place to test out simple Ruby code
