@@ -3,7 +3,7 @@ Installfest
   We can even start this pre-class if we can get there early
   Might want to mention this in the introduction email (come early for install help?)
 
-  Lab 0: Install ruby.
+  Lab: Install ruby.
 
 Introduction to Ruby
   * not the typical slideshow class, more interactive than that.
@@ -15,7 +15,7 @@ Introduction to Ruby
    - gem install fastercsv
    - gem install twitter 
 
-   Lab 1: Rubygems.
+   Lab: Rubygems.
 
   * history
     - ruby is almost 15 years old
@@ -50,6 +50,8 @@ Introduction to Ruby
   * print will print a line to the screen without adding a new line character
   * gets 
   * p
+
+  Lab: Simple I/O.  Prompt user for name, repeat name to them.
 
   * object.inspect will give you good information on an object
     - works well when debugging
