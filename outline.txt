@@ -3,8 +3,8 @@ Installfest
   We can even start this pre-class if we can get there early
   Might want to mention this in the introduction email (come early for install help?)
 
-  Lab: Install ruby.
-  Lab: Rubygems
+*** Lab 0: Install ruby.
+*** Lab 1: Rubygems
 
    - gem install fastercsv
    - gem install twitter 
@@ -33,14 +33,14 @@ Ruby Curious
 
     - Ruby is fun. It's just more fun to say than Python... way more fun to say then Perl.
 
-    Lab: Can we get Matz to stick his head in the door?
+*** Lab 2: Can we get Matz to stick his head in the door?
 
   * introduction to the env 
     filetypes (.rb) 
     commands - ruby, irb 
     explain interpreted language
 
-    Lab: helloWorld.rb
+*** Lab 3: helloWorld.rb
 
   * irb - Interactive Ruby Console
     You can execute live Ruby code on the fly
@@ -57,7 +57,7 @@ Ruby Curious
   * gets 
   * p
 
-  Lab: Simple I/O.  Prompt user for name, repeat NAME to them (we did just
+*** Lab 4: Simple I/O.  Prompt user for name, repeat NAME to them (we did just
   talk about upcase).
 
   * object.inspect will give you good information on an object
@@ -91,7 +91,7 @@ Ruby Curious
 
     - String.split
   
-  Lab: one word PIG LATIN
+*** Lab 4: one word PIG LATIN
     - first letter
     - move it to the end
     - ad ay
@@ -126,7 +126,7 @@ Ruby Curious
 
       ['car', 'truck'].map{|w| w.reverse} #=> ['rac', 'kcurt']
   
-  Lab Full-on Pig Latin
+*** Lab 5: Full-on Pig Latin
     convert a sentence to pig latin
     there may be edge cases
 
@@ -146,7 +146,7 @@ Ruby Curious
         puts "#{key}:#{value}"
       end
 
-  Lab Grocery List
+*** Lab 6: Grocery List
     create a list of groceries 
     print groceries with prices
     sum the prices (total)
@@ -165,7 +165,7 @@ Ruby Curious
 
         true ? 'do if true' : 'do if false'
 
-   Lab: Consonant/vowel (correct) pig latin.
+*** Lab 7: Consonant/vowel (correct) pig latin.
 
     - the even lesser known and slightly deranged unless
       it's kind of like the reverse polarity if statement
@@ -193,7 +193,8 @@ Ruby Curious
             puts "I am Jane"
         end
 
-  Lab Ranges and Case statements
+*** Lab 8:
+   Ranges and Case statements
     when a..f print something
     when g..z print something
     when 0..50 print something
@@ -220,7 +221,7 @@ Ruby Curious
         'sven'
       end
 
-    Lab: Implement even?(number)
+*** Lab 9: Implement even?(number)
 
   * methods suffixes
     - exclamation point: usually indicates that something destructive is going to happen.
@@ -300,8 +301,8 @@ Ruby Curious
   * Inheritance
     - subclasses 
 
-      Lab: Implement Fixnum#even?
-      Lab: Animal lab.  Subclass .walks_on (returns number of legs).
+*** Lab 10: Implement Fixnum#even?
+*** Lab 11: Animal lab.  Subclass .walks_on (returns number of legs).
 
   * Modules
     - collections of methods
@@ -309,7 +310,7 @@ Ruby Curious
     - nice way to organize specific or common functionality
     - ex: Enumerable (each, inject, map)
 
-    Lab: module Eats for Animals
+*** Lab 12: module Eats for Animals
 
   * ARGV
     - fetching arguments from command line
@@ -327,7 +328,7 @@ Ruby Curious
       # read yaml from a file
       something = YAML.load(open('filename'))
 
-      Lab: Read yaml file (we'll provide) and pretty print it.
+*** Lab 13: Read yaml file (we'll provide) and pretty print it.
 
   * Duck Typing
 
@@ -335,3 +336,4 @@ Ruby Curious
     - documentation
     - google
 
+  * Questions?
