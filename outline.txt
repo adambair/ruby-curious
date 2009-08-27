@@ -45,6 +45,10 @@ Introduction to Ruby
   * irb - Interactive Ruby Console
     You can execute live Ruby code on the fly
     A great place to test out simple Ruby code
+    Mention variables
+        store anything
+        created on the fly
+        lowercase
 
   * # denotes a comment
 
