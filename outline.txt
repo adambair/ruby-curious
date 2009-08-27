@@ -8,6 +8,11 @@ Introduction to Ruby
     - follow along, type stuff in
     - speak up, discuss it and move on
 
+  * Rubygems 
+   - get this installed beforehand
+   - gem install fastercsv
+   - gem install twitter 
+
   * history
     - ruby is almost 15 years old
     - conceived by Yukihiro Matsumoto (Matz) in 1993
@@ -305,11 +310,6 @@ Introduction to Ruby
   * ARGV
     - fetching arguments from command line
     - default arguments
-
-  * Rubygems 
-   - get this installed beforehand
-   - gem install fastercsv
-   - gem install twitter 
 
   * Reading file contents 
     - File.open
