@@ -304,4 +304,4 @@ Ruby Curious
     - File.open
     - IO.readlines 
 
-
+  * Duck Typing
