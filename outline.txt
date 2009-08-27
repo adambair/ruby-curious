@@ -51,7 +51,8 @@ Introduction to Ruby
   * gets 
   * p
 
-  Lab: Simple I/O.  Prompt user for name, repeat name to them.
+  Lab: Simple I/O.  Prompt user for name, repeat NAME to them (we did just
+  talk about upcase).
 
   * object.inspect will give you good information on an object
     - works well when debugging
