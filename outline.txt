@@ -301,6 +301,7 @@ Ruby Curious
       rex.vitals          #=> "Blood Type: F Positive"
 
       Lab: Implement Fixnum#even?
+      Lab: Ark lab.
 
   * Modules
     - collections of methods
