@@ -300,6 +300,9 @@ Ruby Curious
       rex.blood_type      #=> NoMethodError: private method `blood_type'
       rex.vitals          #=> "Blood Type: F Positive"
 
+  * Inheritance
+    - subclasses 
+
       Lab: Implement Fixnum#even?
       Lab: Animal lab.  Subclass .walks_on (returns number of legs).
 
@@ -310,10 +313,6 @@ Ruby Curious
     - ex: Enumerable (each, inject, map)
 
     Lab: module Eats for Animals
-
-  * Inheritance
-    - subclasses 
-    - superclasses
 
   * YAML! It's baked right in!
     - serialize and marshal ruby objects to file
