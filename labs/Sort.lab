@@ -12,6 +12,7 @@ Description:
 Required knowledge:
    File i/o
    sort block
+   string.split
 
 Suggestions:
    To be revealed in response to questions.
