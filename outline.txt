@@ -144,6 +144,11 @@ Ruby Curious
         puts "#{key}:#{value}"
       end
 
+  Lab Grocery List
+    create a list of groceries 
+    print groceries with prices
+    sum the prices (total)
+
   * control structures
 
     - the common if/else statement
@@ -168,14 +173,6 @@ Ruby Curious
           'do if true'
         end
 
-    - case statement
-        case this_name
-          when "Jack":
-            puts "I am Jack"
-          when "Jane":
-            puts "I am Jane"
-        end
-
     - ruby lets you do awesome thing like this:
 
         puts 'happy' if adam.happy?
@@ -183,6 +180,14 @@ Ruby Curious
     - but since we have something called unless we can do:
         
         puts 'happy' unless adam.sad? #=> sweet
+
+    - case statement
+        case this_name
+          when "Jack":
+            puts "I am Jack"
+          when "Jane":
+            puts "I am Jane"
+        end
 
   * methods (functions in other languages)
     - always returns the last value in the method
