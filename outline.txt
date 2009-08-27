@@ -87,12 +87,10 @@ Ruby Curious
        "hello"[0,  2] #=> 'he'
        "hello"[-1, 1] #=> 'o'
   
-  Lab one word PIG LATIN
+  Lab: one word PIG LATIN
     - first letter
     - move it to the end
     - ad ay
-
-       Lab: Simple pig latin.  Move first character to end, ad "-ay".
 
   * Integers/Fixnum
       1       #=> 1
@@ -162,6 +160,8 @@ Ruby Curious
     - the less common but more awesome ternary operator 
 
         true ? 'do if true' : 'do if false'
+
+        Lab: Consonant/vowel (correct) pig latin.
 
     - the even lesser known and slightly deranged unless
       it's kind of like the reverse polarity if statement
