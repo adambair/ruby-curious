@@ -156,6 +156,8 @@ Ruby Curious
 
         true ? 'do if true' : 'do if false'
 
+        Lab: Consonant/vowel (correct) pig latin.
+
     - the even lesser known and slightly deranged unless
       it's kind of like the reverse polarity if statement
       kind of odd when used on it's own... but it has a neat use case
