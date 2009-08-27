@@ -85,6 +85,11 @@ Ruby Curious
        "hello"[0,  1] #=> 'h'
        "hello"[0,  2] #=> 'he'
        "hello"[-1, 1] #=> 'o'
+  
+  Lab one word PIG LATIN
+    - first letter
+    - move it to the end
+    - ad ay
 
   * Integers/Fixnum
       1       #=> 1
@@ -98,12 +103,6 @@ Ruby Curious
       dividing two integers performs integer division
       3/1.5 => decimal
       3/2 => 1
-
-  * Ranges
-      "a".."z"
-      1..100
-      upto
-      downto
 
   * Symbols
       identifiers
@@ -121,6 +120,12 @@ Ruby Curious
       end
 
       ['car', 'truck'].map{|w| w.reverse} #=> ['rac', 'kcurt']
+
+  * Ranges
+      "a".."z"
+      1..100
+      upto
+      downto
 
   * Hashes
       Hash.new        #=> {}
@@ -305,3 +310,4 @@ Ruby Curious
     - IO.readlines 
 
   * Duck Typing
+
