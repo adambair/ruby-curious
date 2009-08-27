@@ -122,6 +122,10 @@ Ruby Curious
       end
 
       ['car', 'truck'].map{|w| w.reverse} #=> ['rac', 'kcurt']
+  
+  Lab Full-on Pig Latin
+    convert a sentence to pig latin
+    there may be edge cases
 
   * Ranges
       "a".."z"
