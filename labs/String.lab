@@ -1,0 +1,20 @@
+Background:
+   Funny story as to why you're doing this.  
+
+Description:
+   Prompt user for their name.  Print back their name, capitalized.
+
+Required knowledge:
+   gets/puts
+   the ability to find string.capitalize in rdoc
+
+Suggestions:
+   To be revealed in response to questions.
+
+Expected solution:
+   puts "What is your name?"
+   name = gets
+   puts name.upcase
+
+   ### Better
+   make a gets/puts class, initialize with prompt string.  reuse for later labs.
