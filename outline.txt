@@ -216,6 +216,8 @@ Ruby Curious
       end
     - use short-circuit returns to stop methods  mid-way
 
+    Lab: Implement Fixnum#even?
+
   * methods suffixes
     - exclamation point: usually indicates that something destructive is going to happen.
 
