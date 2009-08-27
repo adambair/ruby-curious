@@ -161,7 +161,7 @@ Ruby Curious
 
         true ? 'do if true' : 'do if false'
 
-        Lab: Consonant/vowel (correct) pig latin.
+   Lab: Consonant/vowel (correct) pig latin.
 
     - the even lesser known and slightly deranged unless
       it's kind of like the reverse polarity if statement
@@ -188,6 +188,13 @@ Ruby Curious
           when "Jane":
             puts "I am Jane"
         end
+
+  Lab Ranges and Case statements
+    when a..f print something
+    when g..z print something
+    when 0..50 print something
+    when 51..100 print something
+
 
   * methods (functions in other languages)
     - always returns the last value in the method
