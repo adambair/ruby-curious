@@ -75,6 +75,7 @@ Ruby Curious
       'Happy'.length    #=> 5
       'Happy'.reverse   #=> 'yppaH'
       'Happy'.downcase  #=> 'happy'
+      'Happy Birthday'.split #=> ['Happy', 'Birthday']
 
     - cast a non-String to a String
 
