@@ -332,9 +332,9 @@ Ruby Curious
 
       Lab: Read yaml file (we'll provide) and pretty print it.
 
+  * Duck Typing
+
   * RUBY-DOC.org
     - documentation
     - google
-
-  * Duck Typing
 
