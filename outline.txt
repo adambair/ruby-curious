@@ -35,6 +35,8 @@ Introduction to Ruby
 
     - Ruby is fun. It's just more fun to say than Python... way more fun to say then Perl.
 
+    Lab: Can we get Matz to stick his head in the door?
+
   * introduction to the env 
     filetypes (.rb) 
     commands - ruby, irb 
