@@ -21,7 +21,6 @@ Introduction to Ruby
     - Ruby follows the principals of the Path of Least Surprise (POLS?). The language was designed to be consistent in how it operates so that ruby programmers can usually guess the right method to use or how something is going to respond/perform/etc.
       
       example:
-
         String#upcase has a matching #downcase method
         instead of upper and lower (choosing up/down instead for logical consistency)
 
@@ -37,13 +36,6 @@ Introduction to Ruby
     A great place to test out simple Ruby code
 
   * # denotes a comment
-    - comments are ignored by Ruby
-    - you can comment out multiple lines by using:
-
-      =begin
-        this is a long comment
-        that has multiple lines
-      =end
 
   * puts will print a line to the screen automatically adding a new line character
   * print will print a line to the screen without adding a new line character
@@ -53,7 +45,6 @@ Introduction to Ruby
   * object.inspect will give you good information on an object
     - works well when debugging
     - commonly used like:
-
       puts something.inspect
 
   * Strings
@@ -256,6 +247,11 @@ Introduction to Ruby
     - protected methods are only avilable to objects of the same type
 
       class Dog
+        attr_accessor :name
+        def initialize(name="Lassie")
+          @name = name
+        end
+
         def bark
           puts 'Woof'
         end
@@ -274,8 +270,9 @@ Introduction to Ruby
           end
       end
 
-      rex = Dog.new       #=> rex is now an instance of the Dog class
-      rex.bark            #=> "Woof"
+      rex = Dog.new("Rex") #=> rex is now an instance of the Dog class
+      rex.bark             #=> "Woof"
+      rex.name             #=> "Rex"
 
       rex.number_of_legs  #=> undefined
       Dog.number_of_legs  #=> 4
