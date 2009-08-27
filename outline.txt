@@ -220,13 +220,6 @@ Ruby Curious
         'sven'
       end
 
-      # would return 'bently'
-      def name
-        return 'bently'
-        'sven'
-      end
-    - use short-circuit returns to stop methods  mid-way
-
     Lab: Implement even?(number)
 
   * methods suffixes
