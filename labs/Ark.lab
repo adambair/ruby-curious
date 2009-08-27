@@ -1,0 +1,49 @@
+Background:
+   Aliens have landed and informed the planet that an asteroid will
+   destroy the Earth in one week.  The aliens are intergalactic
+   preservationists, and will be taking samples of various lifeforms
+   from Earth with them.  Unfortunately, they are unfamilar with Earth's
+   species, and they need your help determining how to care for their
+   passengers.
+
+Description:
+   Implement alien feeding instructions.  The aliens will type the name
+   of the animal, and your instructions should print the type, quantity,
+   and frequency of the animal's preferred food.  Dogs are fed 1 cup of
+   meat
+
+Required knowledge:
+   gets/puts
+   subclasses
+
+Suggestions:
+   To be revealed in response to questions.
+
+Expected solution:
+   class Animal
+     attr_reader :type, :quantity, :frequency
+
+     def initialize
+        @type = "Beans"
+        @quantity = "1 cup"
+        @frequency = 1
+     end
+
+     def food_preference
+       "I eat #{quantity} #{type}, #{frequency} times daily"
+     end
+   end
+
+   def Dog < Animal
+     @type = "Meat"
+     @frequency = 2
+   end
+
+   def Cat < Animal
+     @type = "Fish"
+     @quantity = "4 oz"
+     @frequency = 4
+   end
+
+   def Bird < Animal
+     @type = 
