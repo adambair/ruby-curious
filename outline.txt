@@ -86,6 +86,8 @@ Ruby Curious
        "hello"[0,  2] #=> 'he'
        "hello"[-1, 1] #=> 'o'
 
+       Lab: Simple pig latin.  Move first character to end, ad "-ay".
+
   * Integers/Fixnum
       1       #=> 1
       1+1     #=> 2
