@@ -38,6 +38,10 @@ Introduction to Ruby
 
 ---------
 
+  not the typical slideshow class, more interactive than that.
+  follow along, type stuff in
+  speak up, discuss it and move on
+
   * history
     - ruby is almost 15 years old
     - conceived by Yukihiro Matsumoto (Matz) in 1993
@@ -121,6 +125,7 @@ Introduction to Ruby
 
   * Symbols
       identifiers
+      immutable strings
 
   * Arrays
       Array.new       #=> []
@@ -169,6 +174,14 @@ Introduction to Ruby
           'do if true'
         end
 
+    - case statement
+        case this_name
+          when "Jack":
+            puts "I am Jack"
+          when "Jane":
+            puts "I am Jane"
+        end
+
     - ruby lets you do awesome thing like this:
 
         puts 'happy' if adam.happy?
@@ -201,6 +214,7 @@ Introduction to Ruby
         return 'bently'
         'sven'
       end
+    - use short-circuit returns to stop methods  mid-way
 
   * methods suffixes
     - exclamation point: usually indicates that something destructive is going to happen.
@@ -295,7 +309,7 @@ Introduction to Ruby
       rex.number_of_legs  #=> undefined
       Dog.number_of_legs  #=> 4
 
-      rex.blood_type      #=> undefined
+      rex.blood_type      #=> NoMethodError: private method `blood_type'
       rex.vitals          #=> "Blood Type: F Positive"
 
 ---------
