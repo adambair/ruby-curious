@@ -91,6 +91,8 @@ Ruby Curious
     - move it to the end
     - ad ay
 
+       Lab: Simple pig latin.  Move first character to end, ad "-ay".
+
   * Integers/Fixnum
       1       #=> 1
       1+1     #=> 2
