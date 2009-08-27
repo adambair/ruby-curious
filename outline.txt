@@ -4,18 +4,16 @@ Installfest
   Might want to mention this in the introduction email (come early for install help?)
 
   Lab: Install ruby.
+  Lab: Rubygems
 
-Introduction to Ruby
-  * not the typical slideshow class, more interactive than that.
-    - follow along, type stuff in
-    - speak up, discuss it and move on
-
-  * Rubygems 
-   - get this installed beforehand
    - gem install fastercsv
    - gem install twitter 
 
-   Lab: Rubygems.
+Ruby Curious
+
+  * not the typical slideshow class, more interactive than that.
+    - follow along, type stuff in
+    - speak up, discuss it and move on
 
   * history
     - ruby is almost 15 years old
