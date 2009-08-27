@@ -210,39 +210,12 @@ Introduction to Ruby
         end
       end
 
-    short-circuit version
+    Guard Clause - short-circuit version
 
       def happy(word)
         return 'happy' if word == 'happy'
         'unhappy'
       end
-
-  * unless conditional (opposite of if)
-    - this is the opposite of an if conditional.
-    - unless this do that
-
-      unless happy?
-        'unhappy'
-      else
-        'happy'
-      end
-
-    the if statement that acheives the same thing:
-
-      if happy?
-        'happy'
-      else
-        'unhappy'
-      end
-
-  * single line if and unless statements
-    - you can use if and unless at the end of a line for example:
-
-      puts 'happy' if something.happy?
-      puts 'unhappy' unless something.happy?
-
-  * ternary operator (single line if/else)
-    condition ? true_part : false_part
 
   * Classes
     - classes begin with a capital letter
