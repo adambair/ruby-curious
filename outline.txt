@@ -3,17 +3,14 @@ Installfest
   We can even start this pre-class if we can get there early
   Might want to mention this in the introduction email (come early for install help?)
 
-*** Lab 0: Install ruby.
-*** Lab 1: Rubygems
-
-   - gem install fastercsv
-   - gem install twitter 
+*** Lab 0: Install Ruby and Ruby Gems
 
 Ruby Curious
 
   * not the typical slideshow class, more interactive than that.
-    - follow along, type stuff in
-    - speak up, discuss it and move on
+    - follow along, type stuff in, get help on the fly
+    - speak up, ask questions, offer opinions
+    - remember, learning is fun ;)
 
   * history
     - ruby is almost 15 years old
@@ -31,43 +28,54 @@ Ruby Curious
         String#upcase has a matching #downcase method
         instead of upper and lower (choosing up/down instead for logical consistency)
 
-    - Ruby is fun. It's just more fun to say than Python... way more fun to say then Perl.
-
-*** Lab 2: Can we get Matz to stick his head in the door?
+    - Ruby is awesome. It's just more fun to say than Python... way more fun to say then Perl.
 
   * introduction to the env 
-    filetypes (.rb) 
-    commands - ruby, irb 
-    explain interpreted language
+      filetypes (.rb) 
+      commands - ruby, irb 
+      explain interpreted language
 
-*** Lab 3: helloWorld.rb
+*** Lab 1: Hello World [ lab_01_hello_world.rb ]
 
   * irb - Interactive Ruby Console
-    You can execute live Ruby code on the fly
-    A great place to test out simple Ruby code
-    Mention variables
-        store anything
-        created on the fly
-        lowercase
 
-  * # denotes a comment
+      You can execute live Ruby code on the fly
+      A great place to test out simple Ruby code
 
-  * puts will print a line to the screen automatically adding a new line character
-  * print will print a line to the screen without adding a new line character
-  * gets 
-  * p
+  * variables
 
-*** Lab 4: Simple I/O.  Prompt user for name, repeat NAME to them (we did just
-  talk about upcase).
+      store anything
+      created on the fly
+      starts with a lower
+
+  * comments
+
+      # denotes a comment
+      # this is not executed by the Ruby interpreter
+
+  * printing to the screen
+
+      puts  #=> print a line to the screen automatically adding a new line character
+      print #=> print a line to the screen without adding a new line character
+      gets  #=> get information from the user (gets.chomp will remove newlines \n)
+      p     #=> pretty print an object
+
+*** Lab 2: Prompt user for a name then print it out in reverse [ lab_02_get_name.rb ]
 
   * object.inspect will give you good information on an object
     - works well when debugging
     - commonly used like:
+
       puts something.inspect
+      p something #=> is shorthand for puts something.inspect
 
   * Strings
-    - double quotes WILL execute and is called 'String Interpolation'
-    - "#{variable} is the value"
+    - interpolation
+      double quotes WILL evaluate it's contents and is called 'string interpolation'
+
+      happy = 'smiles'
+      "I'm full of #{happy}!" #=> "I'm full of smiles!"
+
     - single quotes will NOT interpolate and execute
 
       'Happy'           #=> 'happy'
@@ -77,24 +85,34 @@ Ruby Curious
       'Happy'.length    #=> 5
       'Happy'.reverse   #=> 'yppaH'
       'Happy'.downcase  #=> 'happy'
-      'Happy Birthday'.split #=> ['Happy', 'Birthday']
 
     - cast a non-String to a String
 
         5       #=> 5
-        5.to_s  #=>"5"
+        5.to_s  #=> "5"
 
-    - substring
+    - sub-strings
+
        "hello"[0,  1] #=> 'h'
        "hello"[0,  2] #=> 'he'
        "hello"[-1, 1] #=> 'o'
 
-    - String.split
+    - String#split
+        
+        "This is a test".split #=> ["This", "is", "a", "test"]
+        "zomg".split(//)       #=> ["z", "o", "m", "g"] 
+        "zomg".split('o')        #=> ["z", "mg"] 
+
+  * Symbols
+      identifiers or immutable strings
+      symbols look like :this
+
+      happy = :smile
   
-*** Lab 4: one word PIG LATIN
-    - first letter
-    - move it to the end
-    - ad ay
+*** Lab 3: Pig Latin [ lab_03_pig_latin.rb ]
+    take the first letter of the word
+    move it to the end
+    add ay
 
   * Integers/Fixnum
       1       #=> 1
@@ -109,32 +127,59 @@ Ruby Curious
       3/1.5 => decimal
       3/2 => 1
 
-  * Symbols
-      identifiers
-      immutable strings
-
   * Arrays
+
       Array.new       #=> []
       []              #=> []
       [1,2]           #=> [1, 2]
       [1,2] + [3, 4]  #=> [1,2,3,4]
       [1,2,3].size    #=> 3
 
-      ['car', 'truck'].each do |word|
-        puts word
-      end
+    - Iteration / Enumerable
 
-      ['car', 'truck'].map{|w| w.reverse} #=> ['rac', 'kcurt']
+      standard block format
+
+        ['car', 'truck'].each do |word|
+          puts word
+        end
+
+      shorthand block format
+
+        ['car', 'truck'].each {|word| puts word}
+
+      map/collect #=> returns a collection
+        
+        test = ['car', 'truck'].map{|w| w.reverse} #=> ['rac', 'kcurt']
+
+      inject (awesome)
+          
+        iterates over a collection but provides a persistent variable across all iterations
+
+        numbers = [1, 2, 3]
+        numbers.inject(0) {|sum, num| sum += num} #=> 6
+
+        which is functionally equivilent to:
+
+        numbers = [1, 2, 3]
+        sum = 0
+        numbers.each {|num| sum += num}
+        sum #=> 6
+
+    - Array#join
+
+        ["This", "is", "a", "test"].join       #=> "This is a test"
+        ["This", "is", "a", "test"].join(", ") #=> "This, is, a, test"
+        ["This", "is", "a", "test"].join("|")  #=> "This|is|a|test"
   
-*** Lab 5: Full-on Pig Latin
-    convert a sentence to pig latin
-    there may be edge cases
+*** Lab 4: Full-on Pig Latin [ lab_04_full_on_pig_latin.rb ]
+    Convert a sentence to pig latin with help from lab 3 (Pig Latin)
+    ...there may be edge cases ("th")
 
   * Ranges
-      "a".."z"
-      1..100
-      upto
-      downto
+      "a".."z".each {|char| puts char}   #=> prints the alphabet
+      1..100.each {|num| puts num}       #=> counts from 1 to 100
+      1.upto(10).each {|num| puts num}   #=> counts from 1 to 10 
+      10.downto(1).each {|num| puts num} #=> counts from 10 to 1 
 
   * Hashes
       Hash.new        #=> {}
@@ -142,86 +187,126 @@ Ruby Curious
       {'name' => 'jack'}              #=> {'name' => 'jack'}
       {'name' => 'beth', 'age' => 22} #=> {'name' => 'beth', 'age' => 22}
 
-      {'name' => 'beth', 'age' => 22}.each do |key, vale|
+      {'name' => 'beth', 'age' => 22}.each do |key, value|
         puts "#{key}:#{value}"
       end
 
-*** Lab 6: Grocery List
+      {:oranges => 4.50, :apples => 3.20} #=> uses symbols as keys (common in Rails)
+
+*** Lab 5: Grocery List [ lab_05_grocery_list.rb ]
     create a list of groceries 
     print groceries with prices
     sum the prices (total)
 
-  * control structures
+  * Control structures
 
-    - the common if/else statement
+    - if/else
         
-        if true
+        if condition
           'do if true'
         else
           'do if false' #=> this is so not going to ever happen
         end
+
+        if name == 'adam'
+          puts 'awesome'
+        elsif name == 'paul'
+          puts 'even more awesome'
+        else
+          puts 'students are awesome!'
+        end
         
-    - the less common but more awesome ternary operator 
+    - unless (opposite of if/else)
 
-        true ? 'do if true' : 'do if false'
-
-*** Lab 7: Consonant/vowel (correct) pig latin.
-
-    - the even lesser known and slightly deranged unless
-      it's kind of like the reverse polarity if statement
-      kind of odd when used on it's own... but it has a neat use case
-
-        unless true
+        unless condition
           'do if false'
         else
           'do if true'
         end
 
-    - ruby lets you do awesome thing like this:
+        # it's worth noting that unless cannot use elsif #=> unlessif doesn't exist ;)
 
-        puts 'happy' if adam.happy?
+    - ternary (single line if/else)
 
-    - but since we have something called unless we can do:
+        condition ? 'do if true' : 'do if false'
+
+    - statement modifiers
+      
+      ruby lets you do awesome things like this:
+
+        print 'happy' if adam.happy?
+        print 'happy' unless adam.sad?
         
-        puts 'happy' unless adam.sad? #=> sweet
+        # statement modifiers almost read like english -- impressive ;)
 
-    - case statement
-        case this_name
-          when "Jack":
-            puts "I am Jack"
-          when "Jane":
-            puts "I am Jane"
-        end
+    - case (Ruby's switch statement)
+        case statments have TWO forms:
 
-*** Lab 8:
-   Ranges and Case statements
-    when a..f print something
-    when g..z print something
-    when 0..50 print something
-    when 51..100 print something
+        1.) Simple
+        name = 'Jack'
 
+        case
+          when name == "Jack"
+            'I am Jack'
+          when name == "Jane"
+            'I am Jane'
+          else 
+            'who am I'
+        end                   #=> "I am Jack"
 
-  * methods (functions in other languages)
-    - always returns the last value in the method
-    - return is implicit (only need to call return in specific instances such as 'short-circuiting')
-    - an explicit return will stop execution of that method on the line that called return (good for short-circuiting a method)
-    - parameters
+        2.) Awesome
+
+        name = 'Jack'
+
+        case name
+          when "Jack"
+            'I am Jack'
+          when "Jane"
+            'I am Jane'
+          else
+            'who am I'
+        end                   #=> "I am Jack"
+
+*** Lab 6: Grocery List Commentary [ lab_06_grocery_list_commentary.rb ]
+    Iterate over a list of groceries
+    Print out cheap if the item is within a certain price range
+    Print out expensive if the item is within a certain price range
+
+  * Methods
+    
+    - no arguments
 
       def age
         22
       end
 
-      def name
-        'jackson'
+      age #=> 22
+
+    - with arguments
+
+      def full_name(first_name, last_name)
+        "#{first_name} #{last_name}"
       end
 
-      # would return 'sven'
-      def name
-        'bently'
-        'sven'
-      end
+      full_name('adam', 'bair') #=> 'adam bair'
 
-*** Lab 9: Implement even?(number)
+    - return is implicit, last thing in a method will be returned
+
+        def name
+          'bently'
+          'sven'
+        end
+
+        # would return 'sven'
+
+    - an explicit return will stop execution of that method on the line that called return 
+
+        def name
+          return 'bently'
+          'sven'
+        end
+
+        # would return 'bently'
 
   * methods suffixes
     - exclamation point: usually indicates that something destructive is going to happen.
@@ -238,7 +323,9 @@ Ruby Curious
         Time.now.year == year
       end
 
-  * short-circuiting methods
+  * Guard Clause (short-circuit)
+    assists with readability - stop executing if this condition otherwise run the method
+    if you see a guard clause, you only need to read the whole method half the time ;)
 
     standard
 
@@ -250,12 +337,16 @@ Ruby Curious
         end
       end
 
-    Guard Clause - short-circuit version
+    short-circuit version
 
       def happy(word)
         return 'happy' if word == 'happy'
         'unhappy'
       end
+
+*** Lab 7: Implement even?(number) [ lab_07_even.rb ]
+    even?(3) should return false
+    even?(2) should return true
 
   * Classes
     - classes begin with a capital letter
@@ -265,10 +356,6 @@ Ruby Curious
     - protected methods are only avilable to objects of the same type
 
       class Dog
-        attr_accessor :name
-        def initialize(name="Lassie")
-          @name = name
-        end
 
         def bark
           puts 'Woof'
@@ -288,9 +375,8 @@ Ruby Curious
           end
       end
 
-      rex = Dog.new("Rex") #=> rex is now an instance of the Dog class
+      rex = Dog.new
       rex.bark             #=> "Woof"
-      rex.name             #=> "Rex"
 
       rex.number_of_legs  #=> undefined
       Dog.number_of_legs  #=> 4
@@ -298,19 +384,109 @@ Ruby Curious
       rex.blood_type      #=> NoMethodError: private method `blood_type'
       rex.vitals          #=> "Blood Type: F Positive"
 
-  * Inheritance
-    - subclasses 
+    * Open Classes
+      if you want to change the behavior of an existing class
+      all you need to do is open it an add methods
 
-*** Lab 10: Implement Fixnum#even?
-*** Lab 11: Animal lab.  Subclass .walks_on (returns number of legs).
+      class String
+        def upcase_reverse
+          self.upcase.reverse
+        end
+      end
+
+      "adam".upcase_reverse #=> "MADA"
+
+      # self refers to the current object/namespace
+
+*** Lab 8: Implement Fixnum#even? [ lab_08_fixnum_even.rb ]
+    Open up Fixnum and add your own even method
+
+*** Lab 9: Implement an Animal Class [ lab_09_animal_class.rb ]
+    create an animal that has a speak method
+    the speak method should return a string
+
+    * Class Inheritance
+      shared behavior in the base class
+      specific behavior in the subclass
+      you can also override 
+
+      class Vehicle
+        def wheels
+          4
+        end
+      end
+
+      class Truck < Vehicle
+        def four_wheel_drive?
+          true
+        end
+      end
+
+      Vehicle.new.wheels            #=> 4
+      Vehicle.new.four_wheel_drive? #=> Undefined Method
+      Truck.new.wheels              #=> 4
+      Truck.new.four_wheel_drive?   #=> true
+
+*** Lab 10: Subclass the Animal Class [ lab_10_animal_subclass.rb ]
+    create an animal that has a speak method
+    the speak method should return an empty string
+    override the speak method in the subclass
+    add a method to the subclass that isn't in it's parent class
+    
+    * Object Initialization
+      initialize is a special method that is called anytime a new object is created
+
+      class Vehicle
+        def initialize
+          puts "I'm being created"
+        end
+      end
+
+      Vehicle.new #=> "I'm being created"
+
+    * Instance Variables
+      are variables that are specific to a particular instantiated object
+      they always start with an '@' (at) sign
+
+      class Vehicle
+        def initialize(maker)
+          @auto_maker = maker
+        end
+
+        def auto_maker
+          @auto_maker
+        end
+      end
+
+      Vehicle.new('saab').auto_maker #=> 'saab'
+      
+    * Accessors (fancy getter/setters)
+      attr_reader :variable   #=> you can read the variable: car.variable
+      attr_writer :variable   #=> you can write the variable: car.varible = 'something'
+      attr_accessor :variable #=> shorthand for attr_writer + attr_reader
+
+      class Vehicle
+        attr_reader :auto_maker
+
+        def initialize(maker)
+          @auto_maker = maker
+        end
+      end
+
+      Vehicle.new('saab').auto_maker #=> 'saab'
+
+*** Lab 11: Animal Names [lab_11_animal_names.rb]
+      create an animal class
+      animals shoud get names on creation
+      you should be able to change their name
+
+--- Overflow/Extras (if we run out of time) ----
 
   * Modules
     - collections of methods
     - can be 'mixed in' with classes so that the classes respond to those methods
     - nice way to organize specific or common functionality
     - ex: Enumerable (each, inject, map)
-
-*** Lab 12: module Eats for Animals
 
   * ARGV
     - fetching arguments from command line
@@ -321,21 +497,14 @@ Ruby Curious
     - IO.readlines 
 
   * YAML! It's baked right in!
-    - serialize and marshal ruby objects to file
-    - example
+    - serialize objects to a file
+    - marshal ruby objects from a file
+
+      example
+
       # write yaml to a file
       open('filename', 'w') {|f| f << something.to_yaml}
+
       # read yaml from a file
       something = YAML.load(open('filename'))
 
-*** Lab 13: Read yaml file (we'll provide) and pretty print it.
-
-  * Duck Typing
-
-  * RUBY-DOC.org
-    - documentation
-    - google
-
-  * Questions?
-
-*** Lab 14: Tweet-out!
