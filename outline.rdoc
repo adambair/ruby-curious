@@ -202,9 +202,9 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * print groceries with prices
 * sum the prices (total)
 
-==== Control structures
+=== Control structures
 
-===== if/else
+==== if/else
     
     if condition
       'do if true'
@@ -220,7 +220,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       puts 'students are awesome!'
     end
     
-===== unless (opposite of if/else)
+==== unless (opposite of if/else)
 
     unless condition
       'do if false'
@@ -230,11 +230,11 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     # it's worth noting that unless cannot use elsif #=> unlessif doesn't exist ;)
 
-===== ternary (single line if/else)
+==== ternary (single line if/else)
 
     condition ? 'do if true' : 'do if false'
 
-===== statement modifiers
+==== statement modifiers
 * ruby lets you do awesome things like this:
 
     print 'happy' if adam.happy?
@@ -242,7 +242,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     # statement modifiers almost read like english -- impressive ;)
 
-===== case (Ruby's switch statement)
+==== case (Ruby's switch statement)
 * case statments have TWO forms:
 
 - 1.) Simple
