@@ -40,7 +40,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     ruby filename.rb
 * Ruby is an intepreted language (not compiled), read line by line by the Ruby interpreter
 
-=== Lab 1: Hello World [ lab_01_hello_world.rb[link:../labs/lab_01_hello_world.rb] ]
+=== Lab 1: Hello World [ lab_01_hello_world.rb ]
 
 ==== Interactive Ruby Console (irb)
 * You can execute live Ruby code on the fly
@@ -66,7 +66,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     gets  #=> get information from the user (gets.chomp will remove newlines \n)
     p     #=> pretty print an object
 
-=== Lab 2: Prompt user for a name then print it out in reverse [ lab_02_get_name.rb[link:../labs/lab_02_get_name.rb] ]
+=== Lab 2: Prompt user for a name then print it out in reverse [ lab_02_get_name.rb ]
 
 ==== Objectect Inspection
 * object.inspect will give you good information on an object
@@ -114,7 +114,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     happy = :smile
   
-=== Lab 3: Pig Latin [ lab_03_pig_latin.rb[link:../labs/lab_03_pig_latin.rb] ]
+=== Lab 3: Pig Latin [ lab_03_pig_latin.rb ]
 * take the first letter of the word
 * move it to the end
 * add ay
@@ -175,7 +175,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     ["This", "is", "a", "test"].join(", ") #=> "This, is, a, test"
     ["This", "is", "a", "test"].join("|")  #=> "This|is|a|test"
   
-=== Lab 4: Full-on Pig Latin [ lab_04_full_on_pig_latin.rb[link:../labs/lab_04_full_on_pig_latin.rb] ]
+=== Lab 4: Full-on Pig Latin [ lab_04_full_on_pig_latin.rb ]
 * Convert a sentence to pig latin with help from lab 3 (Pig Latin)
 * ...there may be edge cases ("th")
 
@@ -197,7 +197,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     {:oranges => 4.50, :apples => 3.20} #=> uses symbols as keys (common in Rails)
 
-=== Lab 5: Grocery List [ lab_05_grocery_list.rb[link:../labs/lab_05_grocery_list.rb] ]
+=== Lab 5: Grocery List [ lab_05_grocery_list.rb ]
 * create a list of groceries 
 * print groceries with prices
 * sum the prices (total)
@@ -271,7 +271,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
         'who am I'
     end                   #=> "I am Jack"
 
-=== Lab 6: Grocery List Commentary [ lab_06_grocery_list_commentary.rb[link:../labs/lab_06_grocery_list_commentary.rb] ]
+=== Lab 6: Grocery List Commentary [ lab_06_grocery_list_commentary.rb ]
 * Iterate over a list of groceries
 * Print out cheap if the item is within a certain price range
 * Print out expensive if the item is within a certain price range
@@ -348,7 +348,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       'unhappy'
     end
 
-=== Lab 7: Implement even?(number) [ lab_07_even.rb[link:../labs/lab_07_even.rb] ]
+=== Lab 7: Implement even?(number) [ lab_07_even.rb ]
 * even?(3) should return false
 * even?(2) should return true
 
@@ -402,10 +402,10 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     # self refers to the current object/namespace
 
-=== Lab 8: Implement Fixnum#even? [ lab_08_fixnum_even.rb[link:../labs/lab_08_fixnum_even.rb] ]
+=== Lab 8: Implement Fixnum#even? [ lab_08_fixnum_even.rb ]
 * Open up Fixnum and add your own even method
 
-=== Lab 9: Implement an Animal Class [ lab_09_animal_class.rb[link:../labs/lab_09_animal_class.rb] ]
+=== Lab 9: Implement an Animal Class [ lab_09_animal_class.rb ]
 * create an animal that has a speak method
 * the speak method should return a string
 
@@ -431,7 +431,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       Truck.new.wheels              #=> 4
       Truck.new.four_wheel_drive?   #=> true
 
-=== Lab 10: Subclass the Animal Class [ lab_10_animal_subclass.rb[link:../labs/lab_10_animal_subclass.rb] ]
+=== Lab 10: Subclass the Animal Class [ lab_10_animal_subclass.rb ]
 * create an animal that has a speak method
 * the speak method should return an empty string
 * override the speak method in the subclass
@@ -479,7 +479,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
 Vehicle.new('saab').auto_maker #=> 'saab'
 
-=== Lab 11: Animal Names [ lab_11_animal_names.rb[link:../labs/lab_11_animal_names.rb] ]
+=== Lab 11: Animal Names [ lab_11_animal_names.rb ]
 * create an animal class
 * animals shoud get names on creation
 * you should be able to change their name
