@@ -27,5 +27,5 @@ After completing this lab-ridden course your mind will be overwhelmed with the p
 
 == Notes
 
-This class was designed for and first taught at "Lone Star Ruby Conference 2009"[http://www.lonestarrubyconf.com]. We were lucky enough to have Yukihiro Matsumoto (Matz) drop in for 30-45 minutes for a Q/A session (thanks to Pradeep).
+This class was designed for and first taught at lsrc2009[http://www.lonestarrubyconf.com] (Lone Star Ruby Conference). We were lucky enough to have Yukihiro Matsumoto (Matz) drop in for 30-45 minutes for a Q/A session (thanks to Pradeep).
 
