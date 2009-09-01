@@ -1,9 +1,27 @@
-Ruby Curious
+= Ruby Curious
+
 Adam Bair, Pradeep Elankumaran, Paul Ostazeski
+
+== Description
 
 In this course we'll introduce you to the wonderfully curious world of Ruby. You've heard the hype and can no longer hold back you brain's intrinsic thirst for knowledge. Will it make you toast in the morning? Is it your best friend? Can it really solve world hunger?
 
 We think so and we'll show you how. In this course we'll demonstrate the pure awesomeness of Ruby by exploring: 
   
+* Ruby's history and background
+* Strings, Integers and Objects
+* Arrays, Hashes, and Collections
+* Control structures
+* Methods and Classes
+
+and if we have time:
+
+* Modules, and Mixins
+* Blocks, Procs, and Lambdas
+* Metaprogramming
+* Libraries and RubyGems
+
+== Goal
+
 After completing this lab-ridden course your mind will be overwhelmed with the pure wonder and undisputed beauty of the Ruby Language. The hype will no longer be hype, but pure fact, and your undeniable love for Ruby will be... undeniable. 
 
