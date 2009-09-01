@@ -203,7 +203,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * print groceries with prices
 * sum the prices (total)
 
-=== Control structures
+==== Control structures
 
 ==== if/else
     
