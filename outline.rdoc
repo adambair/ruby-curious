@@ -42,6 +42,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
 === Lab 1: Hello World [ lab_01_hello_world.rb ]
 
+
 ==== Interactive Ruby Console (irb)
 * You can execute live Ruby code on the fly
 * A great place to test out simple Ruby code
