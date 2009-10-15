@@ -275,7 +275,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 === Lab 6: Grocery List Commentary [ lab_06_grocery_list_commentary.rb ]
 * Iterate over a list of groceries
 * Print out cheap if the item is within a certain price range
-* Print out expensive if the item is within a certain price range
+* Print out expensive if the item is above a certain price
 
 ==== Methods
   
