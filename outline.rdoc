@@ -143,8 +143,8 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     end
 
     dividing two integers performs integer division
-    3/1.5 => decimal
-    3/2 => 1
+    3/1.5 #=> float
+    3/2   #=> 1
 
 ==== Arrays
 
