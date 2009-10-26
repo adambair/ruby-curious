@@ -142,7 +142,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       puts number
     end
 
-    dividing two integers performs integer division
+    # dividing two integers performs integer division
     3/1.5 #=> float
     3/2   #=> 1
 
