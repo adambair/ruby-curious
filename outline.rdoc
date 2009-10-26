@@ -19,9 +19,9 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 === History
 * ruby is almost 15 years old
 * conceived by Yukihiro Matsumoto (Matz) in 1993
-* first public release (0.95) in december 05
-* 1.0 on christmas of 06
-* Ruby-talk mailing list (first in english) started when ruby 1.3 was released in 99
+* first public release (0.95) in december 95
+* 1.0 was released on christmas of 96
+* Ruby-talk mailing list started when ruby 1.3 was released in 99
 
 === Philosphy
 * Matz designed Ruby with programmer productivity and happiness in mind
