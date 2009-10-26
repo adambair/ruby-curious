@@ -1,3 +1,8 @@
+# Lab 04: Full on Pig Latin
+#
+# prompt the user for a sentence
+# print out the sentence translated to pig latin
+
 print "Type a sentence to translate to pig latin: "
 words = gets.chomp.split
 
@@ -7,8 +12,10 @@ end
 
 puts new_words.join(' ')
 
-# extra credit - handle 'th'
+# the solution in one line 
+# puts gets.chomp.split.collect{word[1, word.length] + word[0,1] + "ay"}.join(" ")
 
+# extra credit - handle 'th'
 # print "Type a sentence to translate to pig latin: "
 # words = gets.chomp.split
 # 
