@@ -1,7 +1,14 @@
+# --------------------------
 # Lab 04: Full on Pig Latin
-#
+# --------------------------
 # prompt the user for a sentence
 # print out the sentence translated to pig latin
+# --------------------------
+# Pig Latin algorithm
+# take the first letter of a word
+# move it to the end
+# add 'ay'
+# --------------------------
 
 print "Type a sentence to translate to pig latin: "
 words = gets.chomp.split

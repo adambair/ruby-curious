@@ -1,3 +1,11 @@
+# --------------------------
+# Lab 11: Animal Names
+# --------------------------
+# Using the Animal classes from lab 10
+# Add an accessor called :name
+# Create an intialize method that sets the name
+# --------------------------
+
 class Animal
   attr_accessor :name
   
@@ -5,18 +13,19 @@ class Animal
     @name = name
   end
 
-  def speak
+  def noise
     ''
   end
 end
 
 class Dog < Animal
-  def speak
+  def noise
     'woof'
-  end
-
-  def likes_cats?
-    false
   end
 end
 
+animal = Animal.new('jack')
+puts animal.name #=> jack
+
+dog = Dog.new('rex')
+puts dog.name #=> rex

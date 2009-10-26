@@ -1,16 +1,21 @@
+# --------------------------
+# Lab 10: Animal Subclass
+# --------------------------
+# Create a class that subclasses the Animal class from lab 09
+# Override the animal noise method with an appropriate noise
+# --------------------------
+
 class Animal
-  def speak
+  def noise
     ''
   end
 end
 
 class Dog < Animal
-  def speak
+  def noise
     'woof'
-  end
-
-  def likes_cats?
-    false
   end
 end
 
+rex = Dog.new
+rex.noise #=> woof
