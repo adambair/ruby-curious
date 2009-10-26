@@ -40,10 +40,6 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     ruby filename.rb
 * Ruby is an intepreted language (not compiled), read line by line by the Ruby interpreter
 
-=== Lab 01: Hello World [ lab_01_hello_world.rb ]
-* Create a ruby file
-* Display 'hello world' when the file is run
-* (you can run the file by typing 'ruby name_of_file.rb'
 
 ==== Interactive Ruby Console (irb)
 * You can execute live Ruby code on the fly
@@ -69,11 +65,10 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     gets  #=> get information from the user (gets.chomp will remove newlines \n)
     p     #=> pretty print an object
 
-=== Lab 02: What is your name? [ lab_02_get_name.rb ]
-* Ask the user for their name
-* Capture the name to a variable
-* Perform a string operation on their name (reverse, upcase, etc)
-* Display the result on screen
+=== Lab 01: Hello World [ lab_01_hello_world.rb ]
+* Create a ruby file
+* Display 'hello world' when the file is run
+* (you can run the file by typing 'ruby name_of_file.rb'
 
 ==== Objectect Inspection
 * object.inspect will give you good information on an object
@@ -98,6 +93,14 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     'Happy'.reverse   #=> 'yppaH'
     'Happy'.downcase  #=> 'happy'
 
+=== Lab 02: What is your name? [ lab_02_get_name.rb ]
+* Ask the user for their name
+* Capture the name to a variable
+* Perform a string operation on their name (reverse, upcase, etc)
+* Display the result on screen
+
+==== String Operations
+
 * cast a non-String to a String
 
     5       #=> 5
@@ -115,12 +118,6 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     "zomg".split(//)       #=> ["z", "o", "m", "g"] 
     "zomg".split('o')        #=> ["z", "mg"] 
 
-==== Symbols
-* identifiers or immutable strings
-* symbols look like :this
-
-    happy = :smile
-  
 === Lab 03: Pig Latin [ lab_03_pig_latin.rb ]
 * Ask the user for a word
 * Translate the word to pig latin
@@ -130,6 +127,12 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * -move it to the end
 * -add ay
 
+==== Symbols
+* identifiers or immutable strings
+* symbols look like :this
+
+    happy = :smile
+  
 ==== Integers/Fixnum
     1       #=> 1
     1+1     #=> 2
