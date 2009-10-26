@@ -40,8 +40,10 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     ruby filename.rb
 * Ruby is an intepreted language (not compiled), read line by line by the Ruby interpreter
 
-=== Lab 1: Hello World [ lab_01_hello_world.rb ]
-
+=== Lab 01: Hello World [ lab_01_hello_world.rb ]
+* Create a ruby file
+* Display 'hello world' when the file is run
+* (you can run the file by typing 'ruby name_of_file.rb'
 
 ==== Interactive Ruby Console (irb)
 * You can execute live Ruby code on the fly
@@ -67,7 +69,11 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     gets  #=> get information from the user (gets.chomp will remove newlines \n)
     p     #=> pretty print an object
 
-=== Lab 2: Prompt user for a name then print it out in reverse [ lab_02_get_name.rb ]
+=== Lab 02: What is your name? [ lab_02_get_name.rb ]
+* Ask the user for their name
+* Capture the name to a variable
+* Perform a string operation on their name (reverse, upcase, etc)
+* Display the result on screen
 
 ==== Objectect Inspection
 * object.inspect will give you good information on an object
@@ -115,10 +121,14 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     happy = :smile
   
-=== Lab 3: Pig Latin [ lab_03_pig_latin.rb ]
-* take the first letter of the word
-* move it to the end
-* add ay
+=== Lab 03: Pig Latin [ lab_03_pig_latin.rb ]
+* Ask the user for a word
+* Translate the word to pig latin
+* Display the translation on screen
+* Pig Latin algorithm:
+* -take the first letter of the word
+* -move it to the end
+* -add ay
 
 ==== Integers/Fixnum
     1       #=> 1
@@ -176,7 +186,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     ["This", "is", "a", "test"].join(", ") #=> "This, is, a, test"
     ["This", "is", "a", "test"].join("|")  #=> "This|is|a|test"
   
-=== Lab 4: Full-on Pig Latin [ lab_04_full_on_pig_latin.rb ]
+=== Lab 04: Full-on Pig Latin [ lab_04_full_on_pig_latin.rb ]
 * Convert a sentence to pig latin with help from lab 3 (Pig Latin)
 * ...there may be edge cases ("th")
 
@@ -198,7 +208,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     {:oranges => 4.50, :apples => 3.20} #=> uses symbols as keys (common in Rails)
 
-=== Lab 5: Grocery List [ lab_05_grocery_list.rb ]
+=== Lab 05: Grocery List [ lab_05_grocery_list.rb ]
 * create a list of groceries 
 * print groceries with prices
 * sum the prices (total)
@@ -272,7 +282,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
         'who am I'
     end                   #=> "I am Jack"
 
-=== Lab 6: Grocery List Commentary [ lab_06_grocery_list_commentary.rb ]
+=== Lab 06: Grocery List Commentary [ lab_06_grocery_list_commentary.rb ]
 * Iterate over a list of groceries
 * Print out cheap if the item is within a certain price range
 * Print out expensive if the item is above a certain price
@@ -349,9 +359,11 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       'unhappy'
     end
 
-=== Lab 7: Implement even?(number) [ lab_07_even.rb ]
-* even?(3) should return false
-* even?(2) should return true
+=== Lab 07: Lucky Number [ lab_07_lucky_number.rb ]
+* Think of a number. We'll use that one.
+* Create a method called lucky? 
+* This method should take one number as an argument
+* The method should return true or false if the argument is the lucky number
 
 ==== Classes
 * classes begin with a capital letter
@@ -403,12 +415,15 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     # self refers to the current object/namespace
 
-=== Lab 8: Implement Fixnum#even? [ lab_08_fixnum_even.rb ]
-* Open up Fixnum and add your own even method
+=== Lab 8: Implement Fixnum#even? [ lab_08_fixnum_lucky_number.rb ]
+* Think of a number. We'll use that one.
+* Open the standard Ruby Fixnum class
+* Create a method called lucky? 
+* The method should return true or false if the number is the lucky number
 
 === Lab 9: Implement an Animal Class [ lab_09_animal_class.rb ]
-* create an animal that has a speak method
-* the speak method should return a string
+* Create a class called 'Animal'
+* Create a method called noise that returns a string
 
     * Class Inheritance
       shared behavior in the base class
@@ -433,10 +448,9 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       Truck.new.four_wheel_drive?   #=> true
 
 === Lab 10: Subclass the Animal Class [ lab_10_animal_subclass.rb ]
-* create an animal that has a speak method
-* the speak method should return an empty string
-* override the speak method in the subclass
-* add a method to the subclass that isn't in it's parent class
+* create an animal that has a noise method
+* the noise method should return an empty string
+* override the noise method in the subclass
     
 ==== Object Initialization
 * initialize is a special method that is called anytime a new object is created
@@ -481,9 +495,9 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 Vehicle.new('saab').auto_maker #=> 'saab'
 
 === Lab 11: Animal Names [ lab_11_animal_names.rb ]
-* create an animal class
-* animals shoud get names on creation
-* you should be able to change their name
+* Using the Animal classes from lab 10
+* Add an accessor called :name
+* Create an intialize method that sets the name
 
 === Overflow/Extras (if we run out of time)
 
