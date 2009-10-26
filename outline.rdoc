@@ -392,6 +392,26 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * This method should take one number as an argument
 * The method should return true or false if the argument is the lucky number
 
+==== Open Classes
+* if you want to change the behavior of an existing class
+* all you need to do is open it an add methods
+
+    class String
+      def upcase_reverse
+        self.upcase.reverse
+      end
+    end
+
+    "adam".upcase_reverse #=> "MADA"
+
+    # self refers to the current object/namespace
+
+=== Lab 08: Implement Fixnum#lucky? [ lab_08_fixnum_lucky_number.rb ]
+* Think of a number. We'll use that one.
+* Open the standard Ruby Fixnum class
+* Create a method called lucky? 
+* The method should return true or false if the number is the lucky number
+
 ==== Classes
 * classes begin with a capital letter
 * class methods are defined def self.method_name
@@ -427,26 +447,6 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     rex.blood_type      #=> NoMethodError: private method `blood_type'
     rex.vitals          #=> "Blood Type: F Positive"
-
-==== Open Classes
-* if you want to change the behavior of an existing class
-* all you need to do is open it an add methods
-
-    class String
-      def upcase_reverse
-        self.upcase.reverse
-      end
-    end
-
-    "adam".upcase_reverse #=> "MADA"
-
-    # self refers to the current object/namespace
-
-=== Lab 08: Implement Fixnum#lucky? [ lab_08_fixnum_lucky_number.rb ]
-* Think of a number. We'll use that one.
-* Open the standard Ruby Fixnum class
-* Create a method called lucky? 
-* The method should return true or false if the number is the lucky number
 
 === Lab 09: Implement an Animal Class [ lab_09_animal_class.rb ]
 * Create a class called 'Animal'
@@ -506,7 +506,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     Vehicle.new('saab').auto_maker #=> 'saab'
   
-==== Accessors (fancy getter/setters)
+==== Accessors (awesome getter/setters)
     attr_reader :variable   #=> you can read the variable: car.variable
     attr_writer :variable   #=> you can write the variable: car.varible = 'something'
     attr_accessor :variable #=> shorthand for attr_writer + attr_reader
