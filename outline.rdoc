@@ -1,5 +1,5 @@
 = Ruby Curious
-Adam Bair, Pradeep Elankumaran, Paul Ostazeski
+Past instructors include Adam Bair, Pradeep Elankumaran, Paul Ostazeski
 
 In this course we'll introduce you to the wonderfully curious world of Ruby. You've heard the hype and can no longer hold back you brain's intrinsic thirst for knowledge. Will it make you toast in the morning? Is it your best friend? Can it really solve world hunger?
 
