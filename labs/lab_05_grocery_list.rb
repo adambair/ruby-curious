@@ -7,7 +7,8 @@ groceries = {
 
 total = 0
 
-groceries.each do |item, cost|
+groceries.each_pair do |item, cost|
+  puts item + '-' + cost.to_s
   total = total + cost
 end
 
