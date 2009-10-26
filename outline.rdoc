@@ -243,10 +243,14 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     end
 
     # it's worth noting that unless cannot use elsif #=> unlessif doesn't exist ;)
+    # this is much more useful when used as a statement modifier
 
 ==== ternary (single line if/else)
 
     condition ? 'do if true' : 'do if false'
+
+    # beware, these are good for SIMPLE logic
+    # nesting is a bad idea... ?:?:?:: doesn't make much sense.
 
 ==== statement modifiers
 * ruby lets you do awesome things like this:
@@ -307,6 +311,17 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     end
 
     full_name('adam', 'bair') #=> 'adam bair'
+
+* splat arguments
+
+    def mood(disposition, *everything_else)
+      puts mood
+      puts everything_else.inspect
+    end
+
+    mood('cheery', 4, 3, 'test', [5,6])
+      #=> cheery
+      #=> [4, 3, 'test', [5,6]] 
 
 * return is implicit, last thing in a method will be returned
 
