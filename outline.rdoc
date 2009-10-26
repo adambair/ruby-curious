@@ -40,7 +40,6 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     ruby filename.rb
 * Ruby is an intepreted language (not compiled), read line by line by the Ruby interpreter
 
-
 ==== Interactive Ruby Console (irb)
 * You can execute live Ruby code on the fly
 * A great place to test out simple Ruby code
