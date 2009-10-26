@@ -196,8 +196,12 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 ==== Ranges
     "a".."z".each {|char| puts char}   #=> prints the alphabet
     1..100.each {|num| puts num}       #=> counts from 1 to 100
+
     1.upto(10).each {|num| puts num}   #=> counts from 1 to 10 
     10.downto(1).each {|num| puts num} #=> counts from 10 to 1 
+    
+    (2..10).step(2).each {|n| puts n}  #=> print even numbers
+    (1..10).step(2).each {|n| puts n}  #=> print odd numbers
 
 ==== Hashes
     Hash.new        #=> {}
@@ -209,7 +213,12 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       puts "#{key}:#{value}"
     end
 
-    {:oranges => 4.50, :apples => 3.20} #=> uses symbols as keys (common in Rails)
+    # Symbols as keys (common in Rails)
+    {:oranges => 4.50, :apples => 3.20}
+
+    # Values and keys
+    {:oranges => 4.50, :apples => 3.20}.keys   #=> [:apples, :oranges]
+    {:oranges => 4.50, :apples => 3.20}.values #=> [4.50, 3.20]
 
 === Lab 05: Grocery List [ lab_05_grocery_list.rb ]
 * create a list of groceries 
@@ -223,7 +232,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     if condition
       'do if true'
     else
-      'do if false' #=> this is so not going to ever happen
+      'do if false' #=> this is not going to happen
     end
 
     if name == 'adam'
@@ -387,8 +396,8 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * classes begin with a capital letter
 * class methods are defined def self.method_name
 * class methods are only available to the class - not to the instance of the class
-* private methods are only available inside that class
-* protected methods are only avilable to objects of the same type
+* private methods are only available within the current class
+* protected methods are only avilable to objects of the same class
 
     class Dog
 
