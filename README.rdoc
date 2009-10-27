@@ -25,7 +25,7 @@ You'll also walk away with enough knowledge and vocabulary to ask the right ques
 
 This class was designed for and first taught at lsrc2009[http://www.lonestarrubyconf.com] (Lone Star Ruby Conference). We were lucky enough to have Yukihiro Matsumoto (Matz) drop in for 30-45 minutes for a Q/A session (thanks to Pradeep).
 
-== Previous Classes
+== Past Classes
 
 This class is in standard rotation at Intridea.
 
