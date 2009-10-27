@@ -51,7 +51,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
 * Ruby is awesome. It's just more fun to say than Python... way more fun to say then Perl.
 
-* "Ruby is optimized for beauty. Try to imagine better modes of expression. Violations of beauty reveal mistakes. Do that enough and you will innovate. --Marcel Molina Jr. Beautiful Code
+* "Ruby is optimized for beauty. Try to imagine better modes of expression. Violations of beauty reveal mistakes. Do that enough and you will innovate." --Marcel Molina Jr. Beautiful Code
 
 === An Introduction to the Ruby Environment
 * most Ruby files have an .rb extension
@@ -726,9 +726,37 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 * Clarity: simple, mundane, understandable, pedestrian. The difference between sophistication and complication.
 * http://rubyhoedown2007.confreaks.com/session09.html
 
-=== Book Recommendations
-* The Well-Grounded Rubyist by David A. Black http://www.amazon.com/Well-Grounded-Rubyist-David-Black/dp/1933988657
-* The Ruby Programming Language by Yukihiro Matsumoto and David Flanagan http://www.amazon.com/Ruby-Programming-Language-David-Flanagan/dp/0596516177
-* The Ruby Way by Hal Fulton http://www.amazon.com/Ruby-Way-Second-Techniques-Programming/dp/0672328844
-* Theory - Smalltalk Best Practice Patterns by Kent Beck http://www.amazon.com/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X
-* Theory - Refactoring: Improving the Design of Existing Code by Kent Beck and Martin Fowler http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672
+=== Resources
+* The Well-Grounded Rubyist by David A. Black 
+  - http://www.amazon.com/Well-Grounded-Rubyist-David-Black/dp/1933988657
+
+* The Ruby Programming Language by Yukihiro Matsumoto and David Flanagan 
+  - http://www.amazon.com/Ruby-Programming-Language-David-Flanagan/dp/0596516177
+
+* The Ruby Way 2nd Edition by Hal Fulton 
+  - http://www.amazon.com/Ruby-Way-Second-Techniques-Programming/dp/0672328844
+
+* Why's Poignant Guide to Ruby
+  - http://mislav.uniqpath.com/poignant-guide/
+
+* Mr. Neighborly's Humble Little Ruby Book
+  - http://www.humblelittlerubybook.com/
+
+* Ruby Cookbook
+  - http://oreilly.com/catalog/9780596523695/
+
+* Confreaks
+  - http://www2.confreaks.com/events
+
+* The Least Surprised in "The Red Scared"
+  - http://www.youtube.com/watch?v=mXZ_htL1rOI
+  - http://www.youtube.com/watch?v=ng95M-cRb44
+  - http://www.youtube.com/watch?v=Du_RTMmofWM
+
+* Theory - Smalltalk Best Practice Patterns by Kent Beck 
+  - http://www.amazon.com/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X
+
+* Theory - Refactoring: Improving the Design of Existing Code by Kent Beck and Martin Fowler
+  - http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672
+
+
