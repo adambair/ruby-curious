@@ -534,22 +534,48 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 * ex: Enumerable (each, inject, map)
 
 ==== ARGV
-* fetching arguments from command line
-* default arguments
+
+* You can use the ARGV array to capture command line arguments
+
+    ruby test.rb happy
+    ARGV[0] would == 'happy'
 
 ==== Reading file contents 
 * File.open
 * IO.readlines 
 
 ==== YAML! It's baked right in!
-* serialize objects to a file
-* marshal ruby objects from a file
 
-    #example
+    ['first', 'second', 'third'].to_yaml
+      #=> "--- \n- first\n- second\n- third\n"
+
+    {:apples => 5.30, :orange => 10.50}.to_yaml
+    #=> "--- \n:apples: 5.3\n:orange: 10.5\n"
+
+* serialize objects to a file
 
     # write yaml to a file
     open('filename', 'w') {|f| f << something.to_yaml}
 
+* marshal ruby objects from a file
+
     # read yaml from a file
     something = YAML.load(open('filename'))
+
+==== Sinatra
+* Sinatra is a tiny web framework built in Ruby
+
+    # The most basic Sinatra application
+    require 'rubygems'
+    require 'sinatra'
+
+    get '/' do
+      'Hello World'
+    end
+
+    # Run the application by typing ruby name_of_file.rb
+    # Sinatra will run on http://localhost:4567 by default
+    # You can add additional urls by defining new get/post methods
+    # Sinatra is AWESOME for small application/services
+    # Additional information: http://www.sinatrarb.com/ 
 
