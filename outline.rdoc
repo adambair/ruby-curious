@@ -580,12 +580,12 @@ Vehicle.new('saab').auto_maker #=> 'saab'
     {:apples => 5.30, :orange => 10.50}.to_yaml
     #=> "--- \n:apples: 5.3\n:orange: 10.5\n"
 
-* serialize objects to a file
+* Serialize objects to a file
 
     # write yaml to a file
     open('filename', 'w') {|f| f << something.to_yaml}
 
-* marshal ruby objects from a file
+* Marshal ruby objects from a file
 
     # read yaml from a file
     something = YAML.load(open('filename'))
@@ -607,3 +607,9 @@ Vehicle.new('saab').auto_maker #=> 'saab'
     # Sinatra is AWESOME for small application/services
     # Additional information: http://www.sinatrarb.com/ 
 
+=== Book Recommendations
+* The Well-Grounded Rubyist by David A. Black http://www.amazon.com/Well-Grounded-Rubyist-David-Black/dp/1933988657
+* The Ruby Programming Language by Yukihiro Matsumoto and David Flanagan http://www.amazon.com/Ruby-Programming-Language-David-Flanagan/dp/0596516177
+* The Ruby Way by Hal Fulton http://www.amazon.com/Ruby-Way-Second-Techniques-Programming/dp/0672328844
+* Smalltalk Best Practice Patterns by Kent Beck http://www.amazon.com/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X
+* Refactoring: Improving the Design of Existing Code by Kent Beck and Martin Fowler http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672
