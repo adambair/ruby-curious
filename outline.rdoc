@@ -533,6 +533,29 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 * nice way to organize specific or common functionality
 * ex: Enumerable (each, inject, map)
 
+    # Contrived Example
+
+    module Human
+      attr_accessor :name
+      def initialize(name)
+        @name = name
+      end
+    end
+
+    class Person
+      include Human
+    end
+
+    class Hero
+      include Human
+    end
+
+    person = Person.new('adam')
+    person.name   #=> 'adam' 
+
+    hero = Hero.new('why')
+    hero.name     #=> 'why' 
+
 ==== ARGV
 
 * You can use the ARGV array to capture command line arguments
