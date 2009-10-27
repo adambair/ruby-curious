@@ -54,6 +54,29 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * instance variables start with an at sign (@)
 * class variables start with a double at sign (@@)
 
+    name  = 'jack'
+    happy = 'sad'
+    sum   = 1+1
+    names = ['adam', 'jack', 'fred']
+
+    # these are all variables
+
+==== Basic Operators
+
+* =   assignment operator
+* ==  comparison operator
+* === case equality operator
+* +   addition/concatenation
+* -   subtraction
+* *   multiplication
+* /   division
+* %   modulus (division remainder)
+
+* Question: What is the case equality operator?
+
+    # Triple equals (or treequals?) essentially gives you a placeholder 
+    # to define arbitrary relationships between objects
+
 ==== Comments
 
     # denotes a comment
@@ -65,6 +88,11 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     print #=> print a line to the screen without adding a new line character
     gets  #=> get information from the user (gets.chomp will remove newlines \n)
     p     #=> pretty print an object
+
+* Question: Where is puts/gets defined? 
+
+    # The Kernel module.
+    # http://www.ruby-doc.org/core/classes/Kernel.html
 
 === Lab 01: Hello World [ lab_01_hello_world.rb ]
 * Create a ruby file
@@ -118,6 +146,13 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     "This is a test".split #=> ["This", "is", "a", "test"]
     "zomg".split(//)       #=> ["z", "o", "m", "g"] 
     "zomg".split('o')        #=> ["z", "mg"] 
+
+* Question: How do you split a string while keeping the delimiter? 
+
+    'this,is,a,test'.split(/(,)/)
+      #=> ["this", ",", "is", ",", "a", ",", "test"]
+
+    # This regex technique is called a 'backreference'
 
 === Lab 03: Pig Latin [ lab_03_pig_latin.rb ]
 * Ask the user for a word
@@ -609,7 +644,7 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 
 === Beautiful Code
 * Marcel Molina gave an excellent talk at Ruby Hoedown 2007 called 'Beautiful Code'
-* In this talk Marcel covers many different definitions of beauty from classical literature and how they might apply to software design
+* In this talk Marcel explores different definitions of beauty from classical literature and how they might apply to software design
 * Beautiful code is the balanced application of Proportion, Integrity, and Clarity.
 
               Proportion
