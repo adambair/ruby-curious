@@ -611,6 +611,13 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 * Marcel Molina gave an excellent talk at Ruby Hoedown 2007 called 'Beautiful Code'
 * In this talk Marcel covers many different definitions of beauty from classical literature and how they might apply to software design
 * Beautiful code is the balanced application of Proportion, Integrity, and Clarity.
+
+              Proportion
+                  /\                [ each are necessary  ] 
+                 /  \               [ none are sufficient ]
+                /____\
+      Integrity        Clarity
+
 * Proportion: The smallest size needed to do the job. Economy of size and the ratio of pairs.
 * Integrity: being well-suited for an intended purpose. He uses the example of a crystalline hammer - while it's quite beautiful, it sucks at fufuilling the role of a hammer (due to it's inherent fragility).
 * Clarity: simple, mundane, understandable, pedestrian. The difference between sophistication and complication.
@@ -620,5 +627,5 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 * The Well-Grounded Rubyist by David A. Black http://www.amazon.com/Well-Grounded-Rubyist-David-Black/dp/1933988657
 * The Ruby Programming Language by Yukihiro Matsumoto and David Flanagan http://www.amazon.com/Ruby-Programming-Language-David-Flanagan/dp/0596516177
 * The Ruby Way by Hal Fulton http://www.amazon.com/Ruby-Way-Second-Techniques-Programming/dp/0672328844
-* Smalltalk Best Practice Patterns by Kent Beck http://www.amazon.com/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X
-* Refactoring: Improving the Design of Existing Code by Kent Beck and Martin Fowler http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672
+* Theory - Smalltalk Best Practice Patterns by Kent Beck http://www.amazon.com/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X
+* Theory - Refactoring: Improving the Design of Existing Code by Kent Beck and Martin Fowler http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672
