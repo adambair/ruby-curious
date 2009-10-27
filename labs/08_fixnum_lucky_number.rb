@@ -7,12 +7,3 @@
 # The method should return true or false if the number is the lucky number
 # --------------------------
 
-class Fixnum
-  def lucky?
-    self == 42
-  end
-end
-
-puts 42.lucky? #=> true
-puts 10.lucky? #=> false
-

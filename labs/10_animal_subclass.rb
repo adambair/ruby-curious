@@ -5,17 +5,3 @@
 # Override the animal noise method with an appropriate noise
 # --------------------------
 
-class Animal
-  def noise
-    ''
-  end
-end
-
-class Dog < Animal
-  def noise
-    'woof'
-  end
-end
-
-rex = Dog.new
-rex.noise #=> woof

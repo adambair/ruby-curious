@@ -6,4 +6,3 @@
 # (you can run the file by typing 'ruby name_of_file.rb'
 # --------------------------
 
-puts 'hello world'
