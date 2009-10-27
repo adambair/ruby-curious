@@ -21,6 +21,15 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     irb      #=> should load Interactive Ruby
     gem -v   #=> should give you a version number
 
+* Install you preferred text editor
+  - We recommend E for this class (basically Textmate for windows)
+
+    http://www.e-texteditor.com/
+
+  - You may also want to consider using Vim.
+
+    http://www.vim.org/download.php
+
 === OSX
 
 You can use the version of Ruby that is included with OSX but I find that it makes life easier in the long run to reinstall Ruby through Macports. You can easily update Ruby and anything that you install from Macports will be aware of your updated version.
@@ -51,12 +60,22 @@ You can use the version of Ruby that is included with OSX but I find that it mak
     ruby -v  #=> should give you a version number
     irb      #=> should load Interactive Ruby
 
+* Install you preferred text editor
+  - We recommend Textmate for this class.
+
+    http://macromates.com/
+
+  - You may also want to consider using Vim.
+
+    http://www.vim.org/download.php
+
 === Linux
 
 * Use whatever package manager your comfortable with (yum, apt, portage, etc)
 * Install ruby, rubygems, and sqlite3
 * The instructions should be about the same as OSX
 * Just substitute Macports with the package manager of your choice
+* Install your preferred editor
 
 === Introduction
 
