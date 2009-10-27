@@ -19,6 +19,8 @@ We think so and we'll show you how. In this course we'll demonstrate the pure aw
 
 After completing this lab-ridden course your mind will be overwhelmed with the pure wonder and undisputed beauty of the Ruby Language. The hype will no longer be hype, but pure fact, and your undeniable love for Ruby will be... undeniable. 
 
+You'll also walk away with enough knowledge and vocabulary to ask the right questions which will allow you to be well on your way to Ruby autodidacticism.
+
 == Notes
 
 This class was designed for and first taught at lsrc2009[http://www.lonestarrubyconf.com] (Lone Star Ruby Conference). We were lucky enough to have Yukihiro Matsumoto (Matz) drop in for 30-45 minutes for a Q/A session (thanks to Pradeep).
