@@ -46,6 +46,16 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * You can execute live Ruby code on the fly
 * A great place to test out simple Ruby code
 
+    irb # will allow you to type ruby code directly into the interpreter
+
+==== Getting Help (ri)
+* Ruby comes with local documentation installed on your computer
+* You can use the command line tool 'ri' to look up documentation
+* ex 'ri Array#length' will give you the proper documentation
+
+* Question: What does 'ri' stand for?
+    # Ruby Interactive (not to be confused with Interactive Ruby or irb)
+
 ==== Variables
 * store anything
 * created on the fly
@@ -60,6 +70,11 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     names = ['adam', 'jack', 'fred']
 
     # these are all variables
+
+* Question: how do you list all active variables?
+    local_variables
+    instance_variables
+    global_variables
 
 ==== Basic Operators
 
@@ -121,6 +136,9 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     'Happy'.length    #=> 5
     'Happy'.reverse   #=> 'yppaH'
     'Happy'.downcase  #=> 'happy'
+
+* Question: Which is an alias - String#length or #size?
+    # size is an alias to the length method
 
 === Lab 02: What is your name? [ lab_02_get_name.rb ]
 * Ask the user for their name
@@ -206,6 +224,10 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     
     test = ['car', 'truck'].map{|w| w.reverse} #=> ['rac', 'kcurt']
 
+* Question: Which is an alias - map or collect?
+    # the documentation isn't clear but the method in the ruby source code
+    # is called collect.
+
 * inject (awesome)
     # iterates over a collection but provides a persistent variable across all iterations
 
@@ -240,6 +262,8 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     (1..10).step(2).each {|n| puts n}  #=> print odd numbers
 
 ==== Hashes
+* Hashes in Ruby 1.8 are UNORDERED key/value pairs
+
     Hash.new        #=> {}
     {}              #=> {}
     {'name' => 'jack'}              #=> {'name' => 'jack'}
@@ -255,6 +279,9 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     # Values and keys
     {:oranges => 4.50, :apples => 3.20}.keys   #=> [:apples, :oranges]
     {:oranges => 4.50, :apples => 3.20}.values #=> [4.50, 3.20]
+
+* Question: Is there a default data structure in Ruby that allows for duplicate keys?
+    # No, not built in. There are libraries -- or you can build one.
 
 === Lab 05: Grocery List [ lab_05_grocery_list.rb ]
 * create a list of groceries 
@@ -347,6 +374,11 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * If your methods frequently go above 5-7 lines you're making life tough on the person reading your code (this includes yourself)
 * Long methods require you to continuously re-read in order to juggle pieces of information whereas a small method can be read once and internalized as a single chunk of functionality.
 * "Always code as if the person who will maintain your code is a maniac serial killer who knows where you live"
+
+* Quesiton: Is Ruby pass by reference or pass by value?
+    # Ruby is pass by value
+    # This can be deceiving as the passed object retains a link to the original which, 
+    # in some cases, will allow the method to modify the original passed object
   
 * no arguments
 
@@ -374,6 +406,21 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     mood('cheery', 4, 3, 'test', [5,6])
       #=> cheery
       #=> [4, 3, 'test', [5,6]] 
+
+* Question: When is the splat operator used outside of method aguments?
+    # split mode
+    a, b, c = *[1,2,3]
+      a #=> 1
+      b #=> 2 
+      c #=> 3 
+
+    # collect mode
+    a, b* = 1, 2, 3
+      a #=> 1
+      b #=> [2,3]
+
+    # expand a range
+    [*1..10] #=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 * return is implicit, last thing in a method will be returned
 
@@ -613,7 +660,10 @@ Vehicle.new('saab').auto_maker #=> 'saab'
       #=> "--- \n- first\n- second\n- third\n"
 
     {:apples => 5.30, :orange => 10.50}.to_yaml
-    #=> "--- \n:apples: 5.3\n:orange: 10.5\n"
+      #=> "--- \n:apples: 5.3\n:orange: 10.5\n"
+
+* Question: What does YAML stand for?
+    # Yet Another Markup Language
 
 * Serialize objects to a file
 
