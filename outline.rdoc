@@ -6,8 +6,25 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 === Installfest
 
 * Who needs help getting ruby up and running on their machines?
-* We can even start this pre-class if we can get there early
-* Might want to mention this in the introduction email (come early for install help?)
+
+=== Windows
+
+* Grab the installer from http://rubyinstaller.org
+
+=== OSX
+
+* Use the default Ruby that ships with OSX...
+* Or use the patched and updated version from macports
+* Make sure you install the Developer Tools (xcode, gcc, etc)
+* Install Macports
+
+    port install ruby
+
+* make sure that you update your path so that /usr/local/bin is first
+
+=== Linux
+
+* Use whatever package manager your comfortable with (yum, apt, portage, etc)
 
 === Introduction
 
