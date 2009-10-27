@@ -34,6 +34,8 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
 * Ruby is awesome. It's just more fun to say than Python... way more fun to say then Perl.
 
+* "Ruby is optimized for beauty. Try to imagine better modes of expression. Violations of beauty reveal mistakes. Do that enough and you will innovate. --Marcel Molina Jr. Beautiful Code
+
 === An Introduction to the Ruby Environment
 * most Ruby files have an .rb extension
 * you can run a Ruby file by typing
@@ -303,6 +305,13 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * Print out expensive if the item is above a certain price
 
 ==== Methods
+
+* Methods should be kept as short as possible without sacrificing readability.
+* Your methods should be 5+-2 lines long 
+* The average human can only keep 5+-2 things in short-term/working memory at a time
+* If your methods frequently go above 5-7 lines you're making life tough on the person reading your code (this includes yourself)
+* Long methods require you to continuously re-read in order to juggle pieces of information whereas a small method can be read once and internalized as a single chunk of functionality.
+* "Always code as if the person who will maintain your code is a maniac serial killer who knows where you live"
   
 * no arguments
 
@@ -562,10 +571,6 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 
     ruby test.rb happy
     ARGV[0] would == 'happy'
-
-==== Reading file contents 
-* File.open
-* IO.readlines 
 
 ==== YAML! It's baked right in!
 
