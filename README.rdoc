@@ -1,6 +1,6 @@
 = Ruby Curious
 
-Adam Bair, Pradeep Elankumaran, Paul Ostazeski
+Previous instructors include Adam Bair, Pradeep Elankumaran, Paul Ostazeski
 
 == Description
 
@@ -13,13 +13,7 @@ We think so and we'll show you how. In this course we'll demonstrate the pure aw
 * Arrays, Hashes, and Collections
 * Control structures
 * Methods and Classes
-
-and if we have time:
-
-* Modules, and Mixins
-* Blocks, Procs, and Lambdas
-* Metaprogramming
-* Libraries and RubyGems
+* Modules and Mixins
 
 == Goal
 
@@ -28,4 +22,10 @@ After completing this lab-ridden course your mind will be overwhelmed with the p
 == Notes
 
 This class was designed for and first taught at lsrc2009[http://www.lonestarrubyconf.com] (Lone Star Ruby Conference). We were lucky enough to have Yukihiro Matsumoto (Matz) drop in for 30-45 minutes for a Q/A session (thanks to Pradeep).
+
+== Previous Classes
+
+* The Lone Star Ruby Conference 2009 in Austin, TX - August 2009
+* Intridea Offices in Washinton, D.C - October 2009
+* Private training in Tysons Corner, VA - October 2009
 
