@@ -1,6 +1,7 @@
 = Ruby Curious
 Past instructors include Adam Bair, Pradeep Elankumaran, and Paul Ostazeski
 
+=== Description
 In this course we'll introduce you to the wonderfully curious world of Ruby. You've heard the hype and can no longer hold back you brain's intrinsic thirst for knowledge. Will it make you toast in the morning? Is it your best friend? Can it really solve world hunger?
 
 === Installfest
@@ -9,22 +10,53 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
 === Windows
 
-* Grab the installer from http://rubyinstaller.org
+* Download and run the Ruby installer
+
+    http://rubyinstaller.org
+
+* Make sure that c:\Ruby\bin is in your path
+* Test Ruby from the command line
+
+    ruby -v  #=> should give you a version number
+    irb      #=> should load Interactive Ruby
+    gem -v   #=> should give you a version number
 
 === OSX
 
-* Use the default Ruby that ships with OSX...
-* Or use the patched and updated version from macports
-* Make sure you install the Developer Tools (xcode, gcc, etc)
-* Install Macports
+You can use the version of Ruby that is included with OSX but I find that it makes life easier in the long run to reinstall Ruby through Macports. You can easily update Ruby and anything that you install from Macports will be aware of your updated version.
 
-    port install ruby
+* Make sure you install the Developer Tools which includes XCode and the GCC compiler.
+* You can install this from the 2nd disk that comes with OSX called 'Developer Tools'
+* If you don't have this disk you can download XCode from Apple (about 700MB)
+  
+  http://developer.apple.com/mac
 
-* make sure that you update your path so that /usr/local/bin is first
+* Download and install Macports
+
+    http://www.macports.org/install.php
+
+* Verify that Macports is installed correctly
+
+    port #=> then type quit to exit
+
+* Install Ruby via Macports
+
+    sudo port install ruby
+
+* Make sure that you update your path so that /usr/local/bin is first
+  - This will ensure that binaries installed by Macports are picked up before the OSX version.
+
+* Verify that Ruby is installed correctly
+
+    ruby -v  #=> should give you a version number
+    irb      #=> should load Interactive Ruby
 
 === Linux
 
 * Use whatever package manager your comfortable with (yum, apt, portage, etc)
+* Install ruby, rubygems, and sqlite3
+* The instructions should be about the same as OSX
+* Just substitute Macports with the package manager of your choice
 
 === Introduction
 
