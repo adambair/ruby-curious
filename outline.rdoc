@@ -65,10 +65,11 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     irb # will allow you to type ruby code directly into the interpreter
 
-=== Getting Help (ri)
-* Ruby comes with local documentation installed on your computer
+=== Getting Help
+* Ruby comes with local documentation installed on your computer called 'ri'
 * You can use the command line tool 'ri' to look up documentation
 * ex 'ri Array#length' will give you the proper documentation
+* You can also use Google: 'Ruby String' will give you the docs on ruby-docs.org
 
 * Question: What does 'ri' stand for?
     # Ruby Interactive (not to be confused with Interactive Ruby or irb)
