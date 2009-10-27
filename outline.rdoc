@@ -109,7 +109,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     # The Kernel module.
     # http://www.ruby-doc.org/core/classes/Kernel.html
 
-=== Lab 01: Hello World [ lab_01_hello_world.rb ]
+=== Lab 01: Hello World [ 01_hello_world.rb ]
 * Create a ruby file
 * Display 'hello world' when the file is run
 * (you can run the file by typing 'ruby name_of_file.rb'
@@ -140,7 +140,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * Question: Which is an alias - String#length or #size?
     # size is an alias to the length method
 
-=== Lab 02: What is your name? [ lab_02_get_name.rb ]
+=== Lab 02: What is your name? [ 02_get_name.rb ]
 * Ask the user for their name
 * Capture the name to a variable
 * Perform a string operation on their name (reverse, upcase, etc)
@@ -172,7 +172,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     # This regex technique is called a 'backreference'
 
-=== Lab 03: Pig Latin [ lab_03_pig_latin.rb ]
+=== Lab 03: Pig Latin [ 03_pig_latin.rb ]
 * Ask the user for a word
 * Translate the word to pig latin
 * Display the translation on screen
@@ -247,7 +247,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     ["This", "is", "a", "test"].join(", ") #=> "This, is, a, test"
     ["This", "is", "a", "test"].join("|")  #=> "This|is|a|test"
   
-=== Lab 04: Full-on Pig Latin [ lab_04_full_on_pig_latin.rb ]
+=== Lab 04: Full-on Pig Latin [ 04_full_on_pig_latin.rb ]
 * Convert a sentence to pig latin with help from lab 3 (Pig Latin)
 * ...there may be edge cases ("th")
 
@@ -283,7 +283,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * Question: Is there a default data structure in Ruby that allows for duplicate keys?
     # No, not built in. There are libraries -- or you can build one.
 
-=== Lab 05: Grocery List [ lab_05_grocery_list.rb ]
+=== Lab 05: Grocery List [ 05_grocery_list.rb ]
 * create a list of groceries 
 * print groceries with prices
 * sum the prices (total)
@@ -361,7 +361,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
         'who am I'
     end                   #=> "I am Jack"
 
-=== Lab 06: Grocery List Commentary [ lab_06_grocery_list_commentary.rb ]
+=== Lab 06: Grocery List Commentary [ 06_grocery_list_commentary.rb ]
 * Iterate over a list of groceries
 * Print out cheap if the item is within a certain price range
 * Print out expensive if the item is above a certain price
@@ -476,7 +476,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       'unhappy'
     end
 
-=== Lab 07: Lucky Number [ lab_07_lucky_number.rb ]
+=== Lab 07: Lucky Number [ 07_lucky_number.rb ]
 * Think of a number. We'll use that one.
 * Create a method called lucky? 
 * This method should take one number as an argument
@@ -496,7 +496,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     # self refers to the current object/namespace
 
-=== Lab 08: Implement Fixnum#lucky? [ lab_08_fixnum_lucky_number.rb ]
+=== Lab 08: Implement Fixnum#lucky? [ 08_fixnum_lucky_number.rb ]
 * Think of a number. We'll use that one.
 * Open the standard Ruby Fixnum class
 * Create a method called lucky? 
@@ -538,7 +538,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     rex.blood_type      #=> NoMethodError: private method `blood_type'
     rex.vitals          #=> "Blood Type: F Positive"
 
-=== Lab 09: Implement an Animal Class [ lab_09_animal_class.rb ]
+=== Lab 09: Implement an Animal Class [ 09_animal_class.rb ]
 * Create a class called 'Animal'
 * Create a method called noise that returns a string
 
@@ -564,7 +564,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       Truck.new.wheels              #=> 4
       Truck.new.four_wheel_drive?   #=> true
 
-=== Lab 10: Subclass the Animal Class [ lab_10_animal_subclass.rb ]
+=== Lab 10: Subclass the Animal Class [ 10_animal_subclass.rb ]
 * create an animal that has a noise method
 * the noise method should return an empty string
 * override the noise method in the subclass
@@ -611,7 +611,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
 Vehicle.new('saab').auto_maker #=> 'saab'
 
-=== Lab 11: Animal Names [ lab_11_animal_names.rb ]
+=== Lab 11: Animal Names [ 11_animal_names.rb ]
 * Using the Animal classes from lab 10
 * Add an accessor called :name
 * Create an intialize method that sets the name
