@@ -42,13 +42,13 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     ruby filename.rb
 * Ruby is an intepreted language (not compiled), read line by line by the Ruby interpreter
 
-==== Interactive Ruby Console (irb)
+=== Interactive Ruby Console (irb)
 * You can execute live Ruby code on the fly
 * A great place to test out simple Ruby code
 
     irb # will allow you to type ruby code directly into the interpreter
 
-==== Getting Help (ri)
+=== Getting Help (ri)
 * Ruby comes with local documentation installed on your computer
 * You can use the command line tool 'ri' to look up documentation
 * ex 'ri Array#length' will give you the proper documentation
@@ -56,7 +56,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * Question: What does 'ri' stand for?
     # Ruby Interactive (not to be confused with Interactive Ruby or irb)
 
-==== Variables
+=== Variables
 * store anything
 * created on the fly
 * starts with a lower*case letter
@@ -76,7 +76,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     instance_variables
     global_variables
 
-==== Basic Operators
+=== Basic Operators
 
 * =   assignment operator
 * ==  comparison operator
@@ -92,12 +92,12 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     # Triple equals (or treequals?) essentially gives you a placeholder 
     # to define arbitrary relationships between objects
 
-==== Comments
+=== Comments
 
     # denotes a comment
     # this is not executed by the Ruby interpreter
 
-==== Printing to the Screen
+=== Printing to the Screen
 
     puts  #=> print a line to the screen automatically adding a new line character
     print #=> print a line to the screen without adding a new line character
@@ -114,7 +114,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * Display 'hello world' when the file is run
 * (you can run the file by typing 'ruby name_of_file.rb'
 
-==== Objectect Inspection
+=== Objectect Inspection
 * object.inspect will give you good information on an object
 * works well when debugging
 * commonly used like:
@@ -122,7 +122,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     puts something.inspect
     p something #=> is shorthand for puts something.inspect
 
-==== Strings
+=== Strings
 * double quotes WILL evaluate it's contents and is called 'string interpolation'
     happy = 'smiles'
     "I'm full of #{happy}!" #=> "I'm full of smiles!"
@@ -146,7 +146,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * Perform a string operation on their name (reverse, upcase, etc)
 * Display the result on screen
 
-==== String Operations
+=== String Operations
 
 * cast a non-String to a String
 
@@ -181,13 +181,13 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * -move it to the end
 * -add ay
 
-==== Symbols
+=== Symbols
 * identifiers or immutable strings
 * symbols look like :this
 
     happy = :smile
   
-==== Integers/Fixnum
+=== Integers/Fixnum
     1       #=> 1
     1+1     #=> 2
     1.zero? #=> false
@@ -200,7 +200,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     3/1.5 #=> float
     3/2   #=> 1
 
-==== Arrays
+=== Arrays
 
     Array.new       #=> []
     []              #=> []
@@ -208,7 +208,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     [1,2] + [3, 4]  #=> [1,2,3,4]
     [1,2,3].size    #=> 3
 
-==== Iteration / Enumerable
+=== Iteration / Enumerable
 
 * standard block format
 
@@ -241,7 +241,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     numbers.each {|num| sum += num}
     sum #=> 6
 
-==== Array#join
+=== Array#join
 
     ["This", "is", "a", "test"].join       #=> "This is a test"
     ["This", "is", "a", "test"].join(", ") #=> "This, is, a, test"
@@ -251,7 +251,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * Convert a sentence to pig latin with help from lab 3 (Pig Latin)
 * ...there may be edge cases ("th")
 
-==== Ranges
+=== Ranges
     "a".."z".each {|char| puts char}   #=> prints the alphabet
     1..100.each {|num| puts num}       #=> counts from 1 to 100
 
@@ -261,7 +261,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     (2..10).step(2).each {|n| puts n}  #=> print even numbers
     (1..10).step(2).each {|n| puts n}  #=> print odd numbers
 
-==== Hashes
+=== Hashes
 * Hashes in Ruby 1.8 are UNORDERED key/value pairs
 
     Hash.new        #=> {}
@@ -288,9 +288,9 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * print groceries with prices
 * sum the prices (total)
 
-==== Control structures
+=== Control structures
 
-==== if/else
+=== if/else
     
     if condition
       'do if true'
@@ -306,7 +306,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       puts 'students are awesome!'
     end
     
-==== unless (opposite of if/else)
+=== unless (opposite of if/else)
 
     unless condition
       'do if false'
@@ -317,14 +317,14 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
     # it's worth noting that unless cannot use elsif #=> unlessif doesn't exist ;)
     # this is much more useful when used as a statement modifier
 
-==== ternary (single line if/else)
+=== ternary (single line if/else)
 
     condition ? 'do if true' : 'do if false'
 
     # beware, these are good for SIMPLE logic
     # nesting is a bad idea... ?:?:?:: doesn't make much sense.
 
-==== statement modifiers
+=== statement modifiers
 * ruby lets you do awesome things like this:
 
     print 'happy' if adam.happy?
@@ -332,7 +332,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     # statement modifiers almost read like english -- impressive ;)
 
-==== case (Ruby's switch statement)
+=== case (Ruby's switch statement)
 * case statments have TWO forms:
 
 - 1.) Simple
@@ -366,7 +366,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * Print out cheap if the item is within a certain price range
 * Print out expensive if the item is above a certain price
 
-==== Methods
+=== Methods
 
 * Methods should be kept as short as possible without sacrificing readability.
 * Your methods should be 5+-2 lines long 
@@ -440,7 +440,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     # would return 'bently'
 
-==== Method Suffixes
+=== Method Suffixes
 * *exclamation* *point*: usually indicates that something destructive is going to happen.
 
   - an example of this would be Array#sort!. The Array#sort! method modifies the current object instead of returning a new object with the modifications. Normally Ruby will make a copy of an object, do the requested operation, and return a copy with the changes leaving the original in-tact. An exclamation point avoids this copy and modifies the object directly.
@@ -455,7 +455,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
       Time.now.year == year
     end
 
-==== Guard Clause (short-circuit)
+=== Guard Clause (short-circuit)
 * assists with readability - stop executing if this condition otherwise run the method
 * if you see a guard clause, you only need to read the whole method half the time ;)
 
@@ -482,7 +482,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * This method should take one number as an argument
 * The method should return true or false if the argument is the lucky number
 
-==== Open Classes
+=== Open Classes
 * if you want to change the behavior of an existing class
 * all you need to do is open it an add methods
 
@@ -502,7 +502,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * Create a method called lucky? 
 * The method should return true or false if the number is the lucky number
 
-==== Classes
+=== Classes
 * classes begin with a capital letter
 * class methods are defined def self.method_name
 * class methods are only available to the class - not to the instance of the class
@@ -569,7 +569,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 * the noise method should return an empty string
 * override the noise method in the subclass
     
-==== Object Initialization
+=== Object Initialization
 * initialize is a special method that is called anytime a new object is created
 
     class Vehicle
@@ -580,7 +580,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     Vehicle.new #=> "I'm being created"
 
-==== Instance Variables
+=== Instance Variables
 * variables that are specific to a particular instantiated object
 * always start with an '@' (at) sign
 
@@ -596,7 +596,7 @@ In this course we'll introduce you to the wonderfully curious world of Ruby. You
 
     Vehicle.new('saab').auto_maker #=> 'saab'
   
-==== Accessors (awesome getter/setters)
+=== Accessors (awesome getter/setters)
     attr_reader :variable   #=> you can read the variable: car.variable
     attr_writer :variable   #=> you can write the variable: car.varible = 'something'
     attr_accessor :variable #=> shorthand for attr_writer + attr_reader
@@ -618,7 +618,7 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 
 === Overflow/Extras (if we run out of time)
 
-==== Modules
+=== Modules
 * collections of methods
 * can be 'mixed in' with classes so that the classes respond to those methods
 * nice way to organize specific or common functionality
@@ -647,14 +647,14 @@ Vehicle.new('saab').auto_maker #=> 'saab'
     hero = Hero.new('why')
     hero.name     #=> 'why' 
 
-==== ARGV
+=== ARGV
 
 * You can use the ARGV array to capture command line arguments
 
     ruby test.rb happy
     ARGV[0] would == 'happy'
 
-==== YAML! It's baked right in!
+=== YAML! It's baked right in!
 
     ['first', 'second', 'third'].to_yaml
       #=> "--- \n- first\n- second\n- third\n"
@@ -675,7 +675,7 @@ Vehicle.new('saab').auto_maker #=> 'saab'
     # read yaml from a file
     something = YAML.load(open('filename'))
 
-==== Sinatra
+=== Sinatra
 * Sinatra is a tiny web framework built in Ruby
 
     # The most basic Sinatra application
