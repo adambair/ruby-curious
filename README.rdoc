@@ -25,7 +25,13 @@ This class was designed for and first taught at lsrc2009[http://www.lonestarruby
 
 == Previous Classes
 
+This class is in standard rotation at Intridea.
+
 * The Lone Star Ruby Conference 2009 in Austin, TX - August 2009
 * Intridea Offices in Washinton, D.C - October 2009
 * Private training in Tysons Corner, VA - October 2009
+
+== License
+
+Contact Adam Bair (adam@intridea.com, adambair@gmail.com)
 
