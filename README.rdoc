@@ -29,7 +29,7 @@ This class is in standard rotation at Intridea.
 
 * The Lone Star Ruby Conference 2009 in Austin, TX - August 2009
 * Intridea Offices in Washinton, D.C - October 2009
-* Private training in Tysons Corner, VA - October 2009
+* Private training - October 2009
 
 == License
 
