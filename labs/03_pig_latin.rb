@@ -1,5 +1,5 @@
 # --------------------------
-# Lab 03: Pig Latin
+# Lab 03: Pig Latin [ 03_pig_latin.rb ]
 # --------------------------
 # Ask the user for a word
 # Translate the word to pig latin

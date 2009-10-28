@@ -1,5 +1,5 @@
 # --------------------------
-# Lab 06: Grocery List
+# Lab 06: Grocery List [
 # --------------------------
 # Create a list of groceries
 # Iterate over the list of groceries

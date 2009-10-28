@@ -1,5 +1,5 @@
 # --------------------------
-# Lab 04: What is your name?
+# Lab 04: What is your name? [ 02_get_name.rb ]
 # --------------------------
 # Ask the user for their name
 # Capture the name to a variable

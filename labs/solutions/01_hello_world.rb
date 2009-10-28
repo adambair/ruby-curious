@@ -1,5 +1,5 @@
 # --------------------------
-# Lab 01: Hello World
+# Lab 01: Hello World [ 01_hello_world.rb ]
 # --------------------------
 # Create a ruby file
 # Display 'hello world' when the file is run

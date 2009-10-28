@@ -1,5 +1,5 @@
 # --------------------------
-# Lab 07: Lucky Number
+# Lab 07: Lucky Number [ 07_lucky_number.rb ]
 # --------------------------
 # Think of a number. We'll use that one.
 # Create a method called lucky? 
