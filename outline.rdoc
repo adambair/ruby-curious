@@ -685,7 +685,7 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 * Add an accessor called :name
 * Create an intialize method that sets the name
 
-=== Overflow/Extras (if we run out of time)
+== Additional Topics
 
 === Modules
 * collections of methods
