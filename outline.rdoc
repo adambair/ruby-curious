@@ -104,9 +104,9 @@ You can use the version of Ruby that is included with OSX but I find that it mak
 
 * "Ruby is optimized for beauty. Try to imagine better modes of expression. Violations of beauty reveal mistakes. Do that enough and you will innovate." --Marcel Molina Jr. Beautiful Code
 
-=== An Introduction to the Ruby Environment
-* most Ruby files have an .rb extension
-* you can run a Ruby file by typing
+=== Ruby Files
+* Most Ruby files have an .rb extension
+* You can run a Ruby file by typing
     ruby filename.rb
 * Ruby is an intepreted language (not compiled), read line by line by the Ruby interpreter
 
