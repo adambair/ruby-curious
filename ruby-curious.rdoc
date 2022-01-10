@@ -776,6 +776,7 @@ Vehicle.new('saab').auto_maker #=> 'saab'
 * Integrity: being well-suited for an intended purpose. He uses the example of a crystalline hammer - while it's quite beautiful, it sucks at fufuilling the role of a hammer (due to it's inherent fragility).
 * Clarity: simple, mundane, understandable, pedestrian. The difference between sophistication and complication.
 * http://rubyhoedown2007.confreaks.com/session09.html
+* https://www.youtube.com/watch?v=uzONDRUKIMs&list=PLE7tQUdRKcybiRW_A4bTAHGKT1R91wJuC
 
 === Resources
 * The Well-Grounded Rubyist by David A. Black 
